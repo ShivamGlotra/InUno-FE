@@ -1,0 +1,71 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  white-space: nowrap;
+  user-select: none;
+
+  border-radius: 6px;
+}
+
+/* Sizes */
+
+.sm {
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+.md {
+  font-size: 14px;
+  padding: 4px 10px;
+}
+
+.lg {
+  font-size: 16px;
+  padding: 6px 14px;
+}
+
+/* Pill */
+
+.pill {
+  border-radius: 999px;
+}
+
+/* Variants */
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.secondary {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.success {
+  background: #16a34a;
+  color: white;
+}
+
+.warning {
+  background: #f59e0b;
+  color: white;
+}
+
+.error {
+  background: #dc2626;
+  color: white;
+}
+
+.neutral {
+  background: #6b7280;
+  color: white;
+}
+
+.info {
+  background: #3b82f6;
+  color: white;
+}
