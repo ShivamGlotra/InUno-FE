@@ -1,0 +1,13 @@
+.banner {
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  background-color: #f3f4f6;
+}
+
+.content {
+  max-width: 600px;
+}

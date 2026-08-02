@@ -1,48 +1,27 @@
-import styles from "./CartIconBadge.module.css";
+import React from "react";
+import styles from "./Chip.module.css";
 
-interface Chip {
-  variant: "default" | "primary" | "secondary" | "warning" | "danger";
-  size: "sm" | "md" | "lg";
+export interface ChipProps {
+  label: string;
   selected?: boolean;
   disabled?: boolean;
   onClick?: () => void;
-  onRemove?: () => void;
 }
 
-const Chip: React.FC<Chip> = ({
-  variant,
-  size,
-  selected,
-  disabled,
+export default function Chip({
+  label,
+  selected = false,
+  disabled = false,
   onClick,
-  onRemove,
-}) => {
-  const handleClick = () => {
-    if (!disabled && onClick) {
-      onClick();
-    }
-  };
-
-  const handleRemove = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (!disabled && onRemove) {
-      onRemove();
-    }
-  };
-
+}: ChipProps) {
   return (
-    <div
-      className={`${styles.chip} ${styles[variant]} ${styles[size]} ${selected ? styles.selected : ""} ${disabled ? styles.disabled : ""}`}
-      onClick={handleClick}
+    <button
+      type="button"
+      className={`${styles.chip} ${selected ? styles.selected : ""}`}
+      disabled={disabled}
+      onClick={onClick}
     >
-      <span className={styles.label}>Chip</span>
-      {onRemove && !disabled && (
-        <button className={styles.removeButton} onClick={handleRemove}>
-          &times;
-        </button>
-      )}
-    </div>
+      {label}
+    </button>
   );
-};
-
-export default Chip;
+}

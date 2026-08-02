@@ -1,0 +1,16 @@
+.hero {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  padding: 48px;
+  background-color: #f3f4f6;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

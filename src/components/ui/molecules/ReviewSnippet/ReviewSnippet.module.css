@@ -1,0 +1,10 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rating {
+  display: flex;
+  gap: 2px;
+}

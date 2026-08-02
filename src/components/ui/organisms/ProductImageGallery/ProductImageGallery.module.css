@@ -1,0 +1,14 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main {
+  width: 100%;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 8px;
+}

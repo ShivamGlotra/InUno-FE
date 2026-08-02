@@ -1,0 +1,11 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.remove {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
