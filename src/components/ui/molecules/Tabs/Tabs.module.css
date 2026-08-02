@@ -1,0 +1,25 @@
+.tabs {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.list button {
+  padding: 10px 16px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid #111827 !important;
+  font-weight: 600;
+}
+
+.content {
+  padding: 20px 0;
+}

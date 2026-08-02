@@ -1,0 +1,10 @@
+.thumbnail {
+  position: relative;
+  width: 100%;
+}
+
+.wishlist {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}

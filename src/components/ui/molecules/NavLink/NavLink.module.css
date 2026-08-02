@@ -1,0 +1,12 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 12px;
+}
+
+.active {
+  color: #111827;
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 8px 12px;
+}

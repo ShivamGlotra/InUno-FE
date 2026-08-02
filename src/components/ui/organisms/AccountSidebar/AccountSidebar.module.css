@@ -1,0 +1,12 @@
+.sidebar {
+  width: 240px;
+  padding: 16px;
+  border-right: 1px solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

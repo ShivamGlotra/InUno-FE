@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+}
+
+.title {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+}

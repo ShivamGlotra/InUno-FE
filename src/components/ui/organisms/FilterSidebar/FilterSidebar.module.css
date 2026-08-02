@@ -1,0 +1,14 @@
+.sidebar {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

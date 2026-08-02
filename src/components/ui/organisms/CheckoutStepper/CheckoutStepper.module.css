@@ -1,0 +1,35 @@
+.stepper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.number {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.active .number,
+.completed .number {
+  background: #111827;
+  color: white;
+  border-color: #111827;
+}
+
+.line {
+  width: 50px;
+  height: 1px;
+  margin: 0 12px;
+  background: #d1d5db;
+}

@@ -1,0 +1,9 @@
+.star {
+  display: inline-block;
+  color: #d1d5db;
+  line-height: 1;
+}
+
+.filled {
+  color: #f59e0b;
+}

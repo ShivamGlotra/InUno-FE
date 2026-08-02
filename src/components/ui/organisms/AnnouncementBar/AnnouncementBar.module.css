@@ -1,0 +1,9 @@
+.bar {
+  width: 100%;
+}
+
+.bar > div {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+}

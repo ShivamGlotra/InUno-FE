@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.icon {
+  padding-left: 0.75rem;
+  color: #6b7280;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.625rem 0.5rem;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.button {
+  align-self: stretch;
+  padding: 0 1rem;
+  border: 0;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+}
