@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  gap: 8px;
+}
+
+.container button {
+  padding: 0 16px;
+  border: 1px solid #111827;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}

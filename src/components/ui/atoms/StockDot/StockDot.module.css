@@ -1,0 +1,18 @@
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.in-stock {
+  background: #16a34a;
+}
+
+.low-stock {
+  background: #f59e0b;
+}
+
+.out-of-stock {
+  background: #dc2626;
+}

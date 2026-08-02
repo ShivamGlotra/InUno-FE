@@ -1,0 +1,20 @@
+.richText {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.richText p {
+  margin: 0 0 1rem;
+}
+
+.richText h1,
+.richText h2,
+.richText h3 {
+  color: #111827;
+}
+
+.richText ul,
+.richText ol {
+  padding-left: 1.5rem;
+}

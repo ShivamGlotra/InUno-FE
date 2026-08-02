@@ -1,0 +1,13 @@
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

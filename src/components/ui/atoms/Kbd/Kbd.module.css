@@ -1,0 +1,11 @@
+.kbd {
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  border: 1px solid #d1d5db;
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  background: #f9fafb;
+  color: #374151;
+  font-family: monospace;
+  font-size: 0.75rem;
+}

@@ -1,0 +1,78 @@
+/* components/atoms/Button/Button.module.css */
+
+.base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* gap-2 */
+  border-radius: 12px; /* rounded-xl (usually 12px or 0.75rem) */
+  font-weight: 600; /* font-semibold */
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out; /* transition-all */
+}
+
+.base:hover:not(:disabled) {
+  opacity: 0.9; /* hover:opacity-90 */
+}
+
+.base:active:not(:disabled) {
+  transform: scale(0.95); /* active:scale-95 */
+}
+
+.base:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--focus-ring-color, #3b82f6);
+}
+
+.base:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* --- Sizes --- */
+.sm {
+  padding: 12px 24px; /* py-3 (0.75rem/12px) and px-6 (1.5rem/24px) */
+  font-size: 14px; /* text-sm */
+}
+
+.md {
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+.lg {
+  padding: 20px 40px;
+  font-size: 18px;
+}
+
+/* --- Variants --- */
+.primary {
+  background-color: #3b82f6;
+  color: #fff; /* text-white */
+}
+/* Note: I removed the hover background color change here since your 
+   previous prompt relied on opacity to show the hover state instead. */
+
+.secondary {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.tertiary,
+.outline,
+.icon-only,
+.link,
+.ghost {
+  background-color: transparent;
+  color: #3b82f6;
+}
+
+.outline {
+  border: 1px solid #93c5fd;
+}
+
+.danger {
+  background-color: #ef4444;
+  color: #fff;
+}
