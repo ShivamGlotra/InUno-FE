@@ -1,16 +1,14 @@
-import CartLineItemSummary from "@/components/ui/molecules/CartLineItemSummary/CartLineItemSummary";
-import OrderSummaryRow from "@/components/ui/molecules/OrderSummaryRow/OrderSummaryRow";
-import PromoCodeInput from "@/components/ui/molecules/PromoCodeInput/PromoCodeInput";
-import Button from "@/components/ui/atoms/Button/Button";
-import styles from "./CartPage.module.css";
+import CartLineItemSummary from '@/components/ui/molecules/CartLineItemSummary/CartLineItemSummary';
+import OrderSummaryRow from '@/components/ui/molecules/OrderSummaryRow/OrderSummaryRow';
+import PromoCodeInput from '@/components/ui/molecules/PromoCodeInput/PromoCodeInput';
+import Button from '@/components/ui/atoms/Button/Button';
+import styles from './CartPage.module.css';
 
 export interface CartPageProps {
   onCheckout?: () => void;
 }
 
-export default function CartPage({
-  onCheckout,
-}: CartPageProps) {
+export default function CartPage({ onCheckout }: CartPageProps) {
   return (
     <main className={styles.page}>
       <section className={styles.items}>
@@ -34,27 +32,15 @@ export default function CartPage({
       <aside className={styles.summary}>
         <h2>Order Summary</h2>
 
-        <OrderSummaryRow
-          label="Subtotal"
-          amount={79.97}
-        />
+        <OrderSummaryRow label="Subtotal" amount={79.97} />
 
-        <OrderSummaryRow
-          label="Shipping"
-          amount={0}
-        />
+        <OrderSummaryRow label="Shipping" amount={0} />
 
-        <OrderSummaryRow
-          label="Total"
-          amount={79.97}
-          emphasized
-        />
+        <OrderSummaryRow label="Total" amount={79.97} emphasized />
 
         <PromoCodeInput />
 
-        <Button onClick={onCheckout}>
-          Checkout
-        </Button>
+        <Button onClick={onCheckout}>Checkout</Button>
       </aside>
     </main>
   );

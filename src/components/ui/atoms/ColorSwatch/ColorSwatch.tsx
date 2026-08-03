@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./ColorSwatch.module.css";
+import React from 'react';
+import styles from './ColorSwatch.module.css';
 
 export interface ColorSwatchProps {
   color: string;
@@ -19,7 +19,7 @@ export default function ColorSwatch({
   return (
     <button
       type="button"
-      className={`${styles.swatch} ${selected ? styles.selected : ""}`}
+      className={`${styles.swatch} ${selected ? styles.selected : ''}`}
       style={{ backgroundColor: color }}
       aria-label={label ?? color}
       disabled={disabled}

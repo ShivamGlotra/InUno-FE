@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import type { ReactNode } from "react";
-import styles from "./Drawer.module.css";
+import type { ReactNode } from 'react';
+import styles from './Drawer.module.css';
 
 export interface DrawerProps {
   open: boolean;
@@ -10,12 +10,7 @@ export interface DrawerProps {
   onClose: () => void;
 }
 
-export default function Drawer({
-  open,
-  children,
-  title,
-  onClose,
-}: DrawerProps) {
+export default function Drawer({ open, children, title, onClose }: DrawerProps) {
   if (!open) return null;
 
   return (

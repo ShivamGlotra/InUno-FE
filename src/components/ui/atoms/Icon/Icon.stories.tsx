@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import Icon from "./Icon";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import Icon from './Icon';
 
 const meta: Meta<typeof Icon> = {
-  title: "Atoms/Icon",
+  title: 'Atoms/Icon',
   component: Icon,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -13,21 +13,21 @@ type Story = StoryObj<typeof Icon>;
 
 export const Small: Story = {
   args: {
-    size: "sm",
-    children: "★",
+    size: 'sm',
+    children: '★',
   },
 };
 
 export const Medium: Story = {
   args: {
-    size: "md",
-    children: "★",
+    size: 'md',
+    children: '★',
   },
 };
 
 export const Large: Story = {
   args: {
-    size: "lg",
-    children: "★",
+    size: 'lg',
+    children: '★',
   },
 };

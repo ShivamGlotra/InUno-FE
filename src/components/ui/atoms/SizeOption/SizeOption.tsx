@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./SizeOption.module.css";
+import React from 'react';
+import styles from './SizeOption.module.css';
 
 export interface SizeOptionProps {
   size: string;
@@ -17,7 +17,7 @@ export default function SizeOption({
   return (
     <button
       type="button"
-      className={`${styles.option} ${selected ? styles.selected : ""}`}
+      className={`${styles.option} ${selected ? styles.selected : ''}`}
       disabled={disabled}
       onClick={onClick}
     >

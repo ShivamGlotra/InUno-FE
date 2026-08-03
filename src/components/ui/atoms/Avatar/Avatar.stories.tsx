@@ -1,42 +1,42 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import Avatar from "./Avatar";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import Avatar from './Avatar';
 
 const meta: Meta<typeof Avatar> = {
-  title: "Atoms/Avatar",
+  title: 'Atoms/Avatar',
   component: Avatar,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 
   argTypes: {
     src: {
-      control: "text",
-      description: "The URL of the avatar image",
+      control: 'text',
+      description: 'The URL of the avatar image',
     },
     alt: {
-      control: "text",
-      description: "The alt text for the avatar image",
+      control: 'text',
+      description: 'The alt text for the avatar image',
     },
     initials: {
-      control: "text",
-      description: "Initials to display if no image is provided",
+      control: 'text',
+      description: 'Initials to display if no image is provided',
     },
     size: {
-      control: { type: "select" },
-      options: ["xs", "sm", "md", "lg", "xl"],
-      description: "The size of the avatar",
+      control: { type: 'select' },
+      options: ['xs', 'sm', 'md', 'lg', 'xl'],
+      description: 'The size of the avatar',
     },
     shape: {
-      control: { type: "select" },
-      options: ["circle", "square"],
-      description: "The shape of the avatar",
+      control: { type: 'select' },
+      options: ['circle', 'square'],
+      description: 'The shape of the avatar',
     },
   },
 
   args: {
-    src: "https://via.placeholder.com/150",
-    alt: "Avatar",
-    initials: "AB",
-    size: "md",
-    shape: "circle",
+    src: 'https://via.placeholder.com/150',
+    alt: 'Avatar',
+    initials: 'AB',
+    size: 'md',
+    shape: 'circle',
   },
 };
 
@@ -45,49 +45,49 @@ type Story = StoryObj<typeof Avatar>;
 
 export const Default: Story = {
   args: {
-    src: "https://via.placeholder.com/150",
-    alt: "Avatar",
-    initials: "AB",
-    size: "md",
-    shape: "circle",
+    src: 'https://via.placeholder.com/150',
+    alt: 'Avatar',
+    initials: 'AB',
+    size: 'md',
+    shape: 'circle',
   },
 };
 
-export const initials: Story = {
+export const Initials: Story = {
   args: {
     src: undefined,
-    initials: "AB",
+    initials: 'AB',
   },
 };
 
-export const image: Story = {
+export const Image: Story = {
   args: {
-    src: "https://via.placeholder.com/150",
+    src: 'https://via.placeholder.com/150',
     initials: undefined,
   },
 };
 
-export const sizes: Story = {
+export const Sizes: Story = {
   args: {
-    src: "https://via.placeholder.com/150",
-    size: "md",
+    src: 'https://via.placeholder.com/150',
+    size: 'md',
   },
 };
 
-export const shapes: Story = {
+export const Shapes: Story = {
   args: {
-    src: "https://via.placeholder.com/150",
-    shape: "circle",
+    src: 'https://via.placeholder.com/150',
+    shape: 'circle',
   },
 };
 
 export const AllSizesAndShapes: Story = {
   render: () => {
-    const sizes = ["xs", "sm", "md", "lg", "xl"] as const;
-    const shapes = ["circle", "square"] as const;
+    const sizes = ['xs', 'sm', 'md', 'lg', 'xl'] as const;
+    const shapes = ['circle', 'square'] as const;
 
     return (
-      <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
         {sizes.map((size) =>
           shapes.map((shape) => (
             <Avatar

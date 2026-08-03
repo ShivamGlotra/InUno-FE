@@ -1,13 +1,11 @@
-import Skeleton from "@/components/ui/atoms/Skeleton/Skeleton";
-import styles from "./LoadingCard.module.css";
+import Skeleton from '@/components/ui/atoms/Skeleton/Skeleton';
+import styles from './LoadingCard.module.css';
 
 export interface LoadingCardProps {
   imageHeight?: number;
 }
 
-export default function LoadingCard({
-  imageHeight = 200,
-}: LoadingCardProps) {
+export default function LoadingCard({ imageHeight = 200 }: LoadingCardProps) {
   return (
     <div className={styles.card}>
       <Skeleton width="100%" height={`${imageHeight}px`} />

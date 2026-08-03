@@ -1,6 +1,6 @@
-import Heading from "@/components/ui/atoms/Heading/Heading";
-import Text from "@/components/ui/atoms/Text/Text";
-import styles from "./CategoryBanner.module.css";
+import Heading from '@/components/ui/atoms/Heading/Heading';
+import Text from '@/components/ui/atoms/Text/Text';
+import styles from './CategoryBanner.module.css';
 
 export interface CategoryBannerProps {
   title: string;
@@ -8,11 +8,7 @@ export interface CategoryBannerProps {
   image?: string;
 }
 
-export default function CategoryBanner({
-  title,
-  description,
-  image,
-}: CategoryBannerProps) {
+export default function CategoryBanner({ title, description, image }: CategoryBannerProps) {
   return (
     <section
       className={styles.banner}

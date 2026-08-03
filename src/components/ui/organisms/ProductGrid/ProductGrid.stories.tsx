@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import ProductGrid from "./ProductGrid";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import ProductGrid from './ProductGrid';
 
 const meta: Meta<typeof ProductGrid> = {
-  title: "Organisms/ProductGrid",
+  title: 'Organisms/ProductGrid',
   component: ProductGrid,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

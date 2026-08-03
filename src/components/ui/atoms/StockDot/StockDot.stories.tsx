@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import StockDot from "./StockDot";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import StockDot from './StockDot';
 
 const meta: Meta<typeof StockDot> = {
-  title: "Atoms/StockDot",
+  title: 'Atoms/StockDot',
   component: StockDot,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -13,18 +13,18 @@ type Story = StoryObj<typeof StockDot>;
 
 export const InStock: Story = {
   args: {
-    status: "in-stock",
+    status: 'in-stock',
   },
 };
 
 export const LowStock: Story = {
   args: {
-    status: "low-stock",
+    status: 'low-stock',
   },
 };
 
 export const OutOfStock: Story = {
   args: {
-    status: "out-of-stock",
+    status: 'out-of-stock',
   },
 };

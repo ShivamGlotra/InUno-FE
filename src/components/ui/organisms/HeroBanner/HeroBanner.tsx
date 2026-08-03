@@ -1,7 +1,7 @@
-import Heading from "@/components/ui/atoms/Heading/Heading";
-import Text from "@/components/ui/atoms/Text/Text";
-import Button from "@/components/ui/atoms/Button/Button";
-import styles from "./HeroBanner.module.css";
+import Heading from '@/components/ui/atoms/Heading/Heading';
+import Text from '@/components/ui/atoms/Text/Text';
+import Button from '@/components/ui/atoms/Button/Button';
+import styles from './HeroBanner.module.css';
 
 export interface HeroBannerProps {
   title: string;
@@ -13,7 +13,7 @@ export interface HeroBannerProps {
 export default function HeroBanner({
   title,
   description,
-  buttonLabel = "Shop Now",
+  buttonLabel = 'Shop Now',
   image,
 }: HeroBannerProps) {
   return (

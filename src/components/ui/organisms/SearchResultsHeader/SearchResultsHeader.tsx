@@ -1,7 +1,7 @@
-import SearchFilterField from "@/components/ui/molecules/SearchFilterField/SearchFilterField";
-import Text from "@/components/ui/atoms/Text/Text";
-import Heading from "@/components/ui/atoms/Heading/Heading";
-import styles from "./SearchResultsHeader.module.css";
+import SearchFilterField from '@/components/ui/molecules/SearchFilterField/SearchFilterField';
+import Text from '@/components/ui/atoms/Text/Text';
+import Heading from '@/components/ui/atoms/Heading/Heading';
+import styles from './SearchResultsHeader.module.css';
 
 export interface SearchResultsHeaderProps {
   query?: string;
@@ -9,15 +9,13 @@ export interface SearchResultsHeaderProps {
 }
 
 export default function SearchResultsHeader({
-  query = "",
+  query = '',
   resultCount = 0,
 }: SearchResultsHeaderProps) {
   return (
     <header className={styles.header}>
       <div>
-        <Heading level={1}>
-          {query ? `Results for "${query}"` : "Search Results"}
-        </Heading>
+        <Heading level={1}>{query ? `Results for "${query}"` : 'Search Results'}</Heading>
 
         <Text>{resultCount} results</Text>
       </div>

@@ -1,6 +1,6 @@
-import Label from "@/components/ui/atoms/Label/Label";
-import Input from "@/components/ui/atoms/Input/Input";
-import styles from "./AddressFormRow.module.css";
+import Label from '@/components/ui/atoms/Label/Label';
+import Input from '@/components/ui/atoms/Input/Input';
+import styles from './AddressFormRow.module.css';
 
 export interface AddressFormRowProps {
   label: string;

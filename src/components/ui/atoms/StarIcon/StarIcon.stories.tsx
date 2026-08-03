@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import StarIcon from "./StarIcon";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import StarIcon from './StarIcon';
 
 const meta: Meta<typeof StarIcon> = {
-  title: "Atoms/StarIcon",
+  title: 'Atoms/StarIcon',
   component: StarIcon,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

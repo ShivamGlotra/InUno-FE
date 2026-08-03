@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import StrikethroughPrice from "./StrikethroughPrice";
+import type { Meta, StoryObj } from '@storybook/react';
+import StrikethroughPrice from './StrikethroughPrice';
 
 const meta: Meta<typeof StrikethroughPrice> = {
-  title: "Atoms/StrikethroughPrice",
+  title: 'Atoms/StrikethroughPrice',
   component: StrikethroughPrice,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

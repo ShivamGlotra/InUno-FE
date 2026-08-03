@@ -1,6 +1,6 @@
-import ShippingBadge from "@/components/ui/atoms/ShippingBadge/ShippingBadge";
-import Badge from "@/components/ui/atoms/Badge/Badge";
-import styles from "./TrustBadgesRow.module.css";
+import ShippingBadge from '@/components/ui/atoms/ShippingBadge/ShippingBadge';
+import Badge from '@/components/ui/atoms/Badge/Badge';
+import styles from './TrustBadgesRow.module.css';
 
 export default function TrustBadgesRow() {
   return (

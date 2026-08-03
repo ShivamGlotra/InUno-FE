@@ -1,6 +1,6 @@
-import Accordion from "@/components/ui/molecules/Accordion/Accordion";
-import Heading from "@/components/ui/atoms/Heading/Heading";
-import styles from "./QASection.module.css";
+import Accordion from '@/components/ui/molecules/Accordion/Accordion';
+import Heading from '@/components/ui/atoms/Heading/Heading';
+import styles from './QASection.module.css';
 
 export default function QASection() {
   return (

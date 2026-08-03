@@ -1,34 +1,26 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import Badge from "./Badge";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import Badge from './Badge';
 
 const meta: Meta<typeof Badge> = {
-  title: "Atoms/Badge",
+  title: 'Atoms/Badge',
   component: Badge,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 
   argTypes: {
     variant: {
-      control: { type: "select" },
-      options: [
-        "primary",
-        "secondary",
-        "success",
-        "warning",
-        "error",
-        "neutral",
-        "info",
-      ],
+      control: { type: 'select' },
+      options: ['primary', 'secondary', 'success', 'warning', 'error', 'neutral', 'info'],
     },
     size: {
-      control: { type: "select" },
-      options: ["sm", "md", "lg"],
+      control: { type: 'select' },
+      options: ['sm', 'md', 'lg'],
     },
-    pill: { control: { type: "boolean" } },
+    pill: { control: { type: 'boolean' } },
   },
   args: {
-    children: "Badge",
-    variant: "primary",
-    size: "md",
+    children: 'Badge',
+    variant: 'primary',
+    size: 'md',
     pill: false,
   },
 };
@@ -45,22 +37,22 @@ export const Pill: Story = {
 
 export const Success: Story = {
   args: {
-    variant: "success",
-    children: "Success",
+    variant: 'success',
+    children: 'Success',
   },
 };
 
 export const Warning: Story = {
   args: {
-    variant: "warning",
-    children: "Warning",
+    variant: 'warning',
+    children: 'Warning',
   },
 };
 
 export const Error: Story = {
   args: {
-    variant: "error",
-    children: "Error",
+    variant: 'error',
+    children: 'Error',
   },
 };
 
@@ -68,9 +60,9 @@ export const AllVariants: Story = {
   render: () => (
     <div
       style={{
-        display: "flex",
+        display: 'flex',
         gap: 12,
-        flexWrap: "wrap",
+        flexWrap: 'wrap',
       }}
     >
       <Badge variant="primary">Primary</Badge>

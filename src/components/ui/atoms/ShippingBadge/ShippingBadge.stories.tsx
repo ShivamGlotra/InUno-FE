@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import ShippingBadge from "./ShippingBadge";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import ShippingBadge from './ShippingBadge';
 
 const meta: Meta<typeof ShippingBadge> = {
-  title: "Atoms/ShippingBadge",
+  title: 'Atoms/ShippingBadge',
   component: ShippingBadge,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -19,6 +19,6 @@ export const FreeShipping: Story = {
 
 export const Custom: Story = {
   args: {
-    children: "Ships in 2 days",
+    children: 'Ships in 2 days',
   },
 };

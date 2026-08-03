@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useState, type ReactNode } from "react";
-import styles from "./Accordion.module.css";
+import { useState, type ReactNode } from 'react';
+import styles from './Accordion.module.css';
 
 export interface AccordionProps {
   title: string;
@@ -9,11 +9,7 @@ export interface AccordionProps {
   defaultOpen?: boolean;
 }
 
-export default function Accordion({
-  title,
-  children,
-  defaultOpen = false,
-}: AccordionProps) {
+export default function Accordion({ title, children, defaultOpen = false }: AccordionProps) {
   const [open, setOpen] = useState(defaultOpen);
 
   return (
@@ -25,7 +21,7 @@ export default function Accordion({
         aria-expanded={open}
       >
         <span>{title}</span>
-        <span className={styles.icon}>{open ? "−" : "+"}</span>
+        <span className={styles.icon}>{open ? '−' : '+'}</span>
       </button>
 
       {open && <div className={styles.content}>{children}</div>}

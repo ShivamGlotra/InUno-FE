@@ -1,4 +1,4 @@
-import MoleculeModal from "@/components/ui/molecules/Modal/Modal";
+import MoleculeModal from '@/components/ui/molecules/Modal/Modal';
 
 export interface ModalProps {
   open: boolean;

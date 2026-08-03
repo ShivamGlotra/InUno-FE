@@ -1,25 +1,25 @@
-import React from "react";
-import styles from "./Image.module.css";
+import styles from './Image.module.css';
+import Image from 'next/image';
 
 export interface ImageProps {
   src: string;
   alt: string;
   width?: number;
   height?: number;
-  objectFit?: "cover" | "contain" | "fill";
+  objectFit?: 'cover' | 'contain' | 'fill';
   className?: string;
 }
 
-export default function Image({
+export default function ImageComponent({
   src,
   alt,
   width,
   height,
-  objectFit = "cover",
-  className = "",
+  objectFit = 'cover',
+  className = '',
 }: ImageProps) {
   return (
-    <img
+    <Image
       src={src}
       alt={alt}
       width={width}

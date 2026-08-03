@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import SizeOption from "@/components/ui/atoms/SizeOption/SizeOption";
-import styles from "./VariantSelector.module.css";
+import { useState } from 'react';
+import SizeOption from '@/components/ui/atoms/SizeOption/SizeOption';
+import styles from './VariantSelector.module.css';
 
 export interface Variant {
   id: string;
@@ -20,9 +20,7 @@ export default function VariantSelector({
   defaultVariant,
   onChange,
 }: VariantSelectorProps) {
-  const [selected, setSelected] = useState(
-    defaultVariant ?? variants[0]?.id
-  );
+  const [selected, setSelected] = useState(defaultVariant ?? variants[0]?.id);
 
   const handleSelect = (id: string) => {
     setSelected(id);

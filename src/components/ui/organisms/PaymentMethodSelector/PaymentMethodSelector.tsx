@@ -1,5 +1,5 @@
-import PaymentMethodOption from "@/components/ui/molecules/PaymentMethodOption/PaymentMethodOption";
-import styles from "./PaymentMethodSelector.module.css";
+import PaymentMethodOption from '@/components/ui/molecules/PaymentMethodOption/PaymentMethodOption';
+import styles from './PaymentMethodSelector.module.css';
 
 export default function PaymentMethodSelector() {
   return (
@@ -13,11 +13,7 @@ export default function PaymentMethodSelector() {
         selected
       />
 
-      <PaymentMethodOption
-        id="paypal"
-        name="PayPal"
-        description="Pay securely with PayPal"
-      />
+      <PaymentMethodOption id="paypal" name="PayPal" description="Pay securely with PayPal" />
     </section>
   );
 }

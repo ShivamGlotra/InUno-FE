@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import StickyBuyBox from "./StickyBuyBox";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import StickyBuyBox from './StickyBuyBox';
 
 const meta: Meta<typeof StickyBuyBox> = {
-  title: "Organisms/StickyBuyBox",
+  title: 'Organisms/StickyBuyBox',
   component: StickyBuyBox,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import RelatedProductsCarousel from "./RelatedProductsCarousel";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import RelatedProductsCarousel from './RelatedProductsCarousel';
 
 const meta: Meta<typeof RelatedProductsCarousel> = {
-  title: "Organisms/RelatedProductsCarousel",
+  title: 'Organisms/RelatedProductsCarousel',
   component: RelatedProductsCarousel,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import DeliveryEstimate from "./DeliveryEstimate";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import DeliveryEstimate from './DeliveryEstimate';
 
 const meta: Meta<typeof DeliveryEstimate> = {
-  title: "Molecules/DeliveryEstimate",
+  title: 'Molecules/DeliveryEstimate',
   component: DeliveryEstimate,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -13,13 +13,13 @@ type Story = StoryObj<typeof DeliveryEstimate>;
 
 export const Default: Story = {
   args: {
-    date: "Friday, August 8",
+    date: 'Friday, August 8',
   },
 };
 
 export const WithLocation: Story = {
   args: {
-    date: "Friday, August 8",
-    location: "Toronto, ON",
+    date: 'Friday, August 8',
+    location: 'Toronto, ON',
   },
 };

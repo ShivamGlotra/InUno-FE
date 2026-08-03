@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import CartIconBadge from "./CartIconBadge";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import CartIconBadge from './CartIconBadge';
 
 const meta: Meta<typeof CartIconBadge> = {
-  title: "Atoms/CartIconBadge",
+  title: 'Atoms/CartIconBadge',
   component: CartIconBadge,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   args: {
     count: 3,
-    size: "md",
+    size: 'md',
   },
 };
 
@@ -31,7 +31,7 @@ export const LargeCount: Story = {
 
 export const AllSizes: Story = {
   render: () => (
-    <div style={{ display: "flex", gap: 32, alignItems: "center" }}>
+    <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
       <CartIconBadge count={2} size="sm" />
       <CartIconBadge count={12} size="md" />
       <CartIconBadge count={99} size="lg" />

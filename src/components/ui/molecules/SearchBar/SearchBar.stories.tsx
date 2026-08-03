@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import SearchBar from "./SearchBar";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import SearchBar from './SearchBar';
 
 const meta: Meta<typeof SearchBar> = {
-  title: "Molecules/SearchBar",
+  title: 'Molecules/SearchBar',
   component: SearchBar,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -13,6 +13,6 @@ type Story = StoryObj<typeof SearchBar>;
 
 export const Default: Story = {
   args: {
-    placeholder: "Search products...",
+    placeholder: 'Search products...',
   },
 };

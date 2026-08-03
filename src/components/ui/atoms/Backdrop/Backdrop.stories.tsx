@@ -1,30 +1,30 @@
-import { Meta, StoryObj } from "@storybook/react-vite";
-import Backdrop from "./Backdrop";
+import { Meta, StoryObj } from '@storybook/react-vite';
+import Backdrop from './Backdrop';
 
 const meta: Meta<typeof Backdrop> = {
-  title: "Atoms/Backdrop",
+  title: 'Atoms/Backdrop',
   component: Backdrop,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     open: {
-      control: "boolean",
-      description: "Controls the visibility of the backdrop.",
+      control: 'boolean',
+      description: 'Controls the visibility of the backdrop.',
       defaultValue: false,
     },
     onClick: {
-      action: "clicked",
-      description: "Callback function triggered when the backdrop is clicked.",
+      action: 'clicked',
+      description: 'Callback function triggered when the backdrop is clicked.',
     },
     className: {
-      control: "text",
-      description: "Additional CSS classes to apply to the backdrop.",
-      defaultValue: "",
+      control: 'text',
+      description: 'Additional CSS classes to apply to the backdrop.',
+      defaultValue: '',
     },
   },
   args: {
     open: true,
     onClick: undefined,
-    className: "",
+    className: '',
   },
 };
 

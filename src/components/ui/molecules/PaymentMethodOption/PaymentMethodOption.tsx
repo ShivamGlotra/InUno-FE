@@ -1,6 +1,6 @@
-import Radio from "@/components/ui/atoms/Radio/Radio";
-import Text from "@/components/ui/atoms/Text/Text";
-import styles from "./PaymentMethodOption.module.css";
+import Radio from '@/components/ui/atoms/Radio/Radio';
+import Text from '@/components/ui/atoms/Text/Text';
+import styles from './PaymentMethodOption.module.css';
 
 export interface PaymentMethodOptionProps {
   id: string;
@@ -16,12 +16,8 @@ export default function PaymentMethodOption({
   selected,
 }: PaymentMethodOptionProps) {
   return (
-    <label className={`${styles.option} ${selected ? styles.selected : ""}`}>
-      <Radio
-        name="payment-method"
-        value={id}
-        defaultChecked={selected}
-      />
+    <label className={`${styles.option} ${selected ? styles.selected : ''}`}>
+      <Radio name="payment-method" value={id} defaultChecked={selected} />
 
       <div>
         <Text>{name}</Text>

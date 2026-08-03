@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import Chip from "./Chip";
+import type { Meta, StoryObj } from '@storybook/react';
+import Chip from './Chip';
 
 const meta: Meta<typeof Chip> = {
-  title: "Atoms/Chip",
+  title: 'Atoms/Chip',
   component: Chip,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -13,20 +13,20 @@ type Story = StoryObj<typeof Chip>;
 
 export const Default: Story = {
   args: {
-    label: "Category",
+    label: 'Category',
   },
 };
 
 export const Selected: Story = {
   args: {
-    label: "Selected",
+    label: 'Selected',
     selected: true,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    label: "Disabled",
+    label: 'Disabled',
     disabled: true,
   },
 };

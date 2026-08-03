@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import Price from "./Price";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import Price from './Price';
 
 const meta: Meta<typeof Price> = {
-  title: "Atoms/Price",
+  title: 'Atoms/Price',
   component: Price,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -26,7 +26,7 @@ export const WholeNumber: Story = {
 export const CanadianDollar: Story = {
   args: {
     amount: 49.99,
-    currency: "CAD",
-    locale: "en-CA",
+    currency: 'CAD',
+    locale: 'en-CA',
   },
 };

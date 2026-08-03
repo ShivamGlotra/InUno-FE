@@ -1,6 +1,6 @@
-import Link from "@/components/ui/atoms/Link/Link";
-import Text from "@/components/ui/atoms/Text/Text";
-import styles from "./Footer.module.css";
+import Link from '@/components/ui/atoms/Link/Link';
+import Text from '@/components/ui/atoms/Text/Text';
+import styles from './Footer.module.css';
 
 export default function Footer() {
   return (

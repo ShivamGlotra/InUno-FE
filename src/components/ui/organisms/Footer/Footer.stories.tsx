@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import Footer from "./Footer";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import Footer from './Footer';
 
 const meta: Meta<typeof Footer> = {
-  title: "Organisms/Footer",
+  title: 'Organisms/Footer',
   component: Footer,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

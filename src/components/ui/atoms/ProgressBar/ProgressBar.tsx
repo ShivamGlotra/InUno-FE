@@ -1,15 +1,12 @@
-import React from "react";
-import styles from "./ProgressBar.module.css";
+import React from 'react';
+import styles from './ProgressBar.module.css';
 
 export interface ProgressBarProps {
   value: number;
   max?: number;
 }
 
-export default function ProgressBar({
-  value,
-  max = 100,
-}: ProgressBarProps) {
+export default function ProgressBar({ value, max = 100 }: ProgressBarProps) {
   const percentage = Math.min(Math.max((value / max) * 100, 0), 100);
 
   return (
@@ -20,10 +17,7 @@ export default function ProgressBar({
       aria-valuemin={0}
       aria-valuemax={max}
     >
-      <div
-        className={styles.progress}
-        style={{ width: `${percentage}%` }}
-      />
+      <div className={styles.progress} style={{ width: `${percentage}%` }} />
     </div>
   );
 }

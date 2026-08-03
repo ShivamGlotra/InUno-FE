@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./QuantityStepperButton.module.css";
+import React from 'react';
+import styles from './QuantityStepperButton.module.css';
 
 export interface QuantityStepperButtonProps {
-  action: "increase" | "decrease";
+  action: 'increase' | 'decrease';
   onClick?: () => void;
   disabled?: boolean;
 }
@@ -18,9 +18,9 @@ export default function QuantityStepperButton({
       className={styles.button}
       onClick={onClick}
       disabled={disabled}
-      aria-label={action === "increase" ? "Increase quantity" : "Decrease quantity"}
+      aria-label={action === 'increase' ? 'Increase quantity' : 'Decrease quantity'}
     >
-      {action === "increase" ? "+" : "−"}
+      {action === 'increase' ? '+' : '−'}
     </button>
   );
 }

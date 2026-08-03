@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import PriceBlock from "./PriceBlock";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import PriceBlock from './PriceBlock';
 
 const meta: Meta<typeof PriceBlock> = {
-  title: "Molecules/PriceBlock",
+  title: 'Molecules/PriceBlock',
   component: PriceBlock,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

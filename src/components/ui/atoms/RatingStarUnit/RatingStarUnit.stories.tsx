@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import RatingStarUnit from "./RatingStarUnit";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import RatingStarUnit from './RatingStarUnit';
 
 const meta: Meta<typeof RatingStarUnit> = {
-  title: "Atoms/RatingStarUnit",
+  title: 'Atoms/RatingStarUnit',
   component: RatingStarUnit,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
