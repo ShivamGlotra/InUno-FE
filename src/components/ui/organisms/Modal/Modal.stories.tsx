@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import Modal from "./Modal";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import Modal from './Modal';
 
 const meta: Meta<typeof Modal> = {
-  title: "Organisms/Modal",
+  title: 'Organisms/Modal',
   component: Modal,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -14,8 +14,8 @@ type Story = StoryObj<typeof Modal>;
 export const Open: Story = {
   args: {
     open: true,
-    title: "Example Modal",
+    title: 'Example Modal',
     onClose: () => {},
-    children: "Modal content.",
+    children: 'Modal content.',
   },
 };

@@ -1,7 +1,7 @@
-import Select from "@/components/ui/atoms/Select/Select";
-import Checkbox from "@/components/ui/atoms/Checkbox/Checkbox";
-import Heading from "@/components/ui/atoms/Heading/Heading";
-import styles from "./FilterSidebar.module.css";
+import Select from '@/components/ui/atoms/Select/Select';
+import Checkbox from '@/components/ui/atoms/Checkbox/Checkbox';
+import Heading from '@/components/ui/atoms/Heading/Heading';
+import styles from './FilterSidebar.module.css';
 
 export default function FilterSidebar() {
   return (
@@ -21,9 +21,9 @@ export default function FilterSidebar() {
 
         <Select
           options={[
-            { label: "Recommended", value: "recommended" },
-            { label: "Price: Low to High", value: "low" },
-            { label: "Price: High to Low", value: "high" },
+            { label: 'Recommended', value: 'recommended' },
+            { label: 'Price: Low to High', value: 'low' },
+            { label: 'Price: High to Low', value: 'high' },
           ]}
         />
       </div>

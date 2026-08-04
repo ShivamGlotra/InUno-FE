@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import ReviewsSection from "./ReviewsSection";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import ReviewsSection from './ReviewsSection';
 
 const meta: Meta<typeof ReviewsSection> = {
-  title: "Organisms/ReviewsSection",
+  title: 'Organisms/ReviewsSection',
   component: ReviewsSection,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

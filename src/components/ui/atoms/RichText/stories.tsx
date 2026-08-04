@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import RichText from "./RichText";
+import type { Meta, StoryObj } from '@storybook/react';
+import RichText from './RichText';
 
 const meta: Meta<typeof RichText> = {
-  title: "Atoms/RichText",
+  title: 'Atoms/RichText',
   component: RichText,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

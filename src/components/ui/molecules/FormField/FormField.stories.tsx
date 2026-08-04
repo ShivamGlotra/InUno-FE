@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import FormField from "./FormField";
-import Input from "@/components/ui/atoms/Input/Input";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import FormField from './FormField';
+import Input from '@/components/ui/atoms/Input/Input';
 
 const meta: Meta<typeof FormField> = {
-  title: "Molecules/FormField",
+  title: 'Molecules/FormField',
   component: FormField,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

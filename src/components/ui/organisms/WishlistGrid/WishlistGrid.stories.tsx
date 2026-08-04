@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import WishlistGrid from "./WishlistGrid";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import WishlistGrid from './WishlistGrid';
 
 const meta: Meta<typeof WishlistGrid> = {
-  title: "Organisms/WishlistGrid",
+  title: 'Organisms/WishlistGrid',
   component: WishlistGrid,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

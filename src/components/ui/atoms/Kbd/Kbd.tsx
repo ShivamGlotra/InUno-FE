@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Kbd.module.css";
+import React from 'react';
+import styles from './Kbd.module.css';
 
 export interface KbdProps {
   children: React.ReactNode;

@@ -1,26 +1,19 @@
-import { ReactNode } from "react";
-import styles from "./Badge.module.css";
+import { ReactNode } from 'react';
+import styles from './Badge.module.css';
 
 interface BadgeProps {
   children: ReactNode;
   className?: string;
-  variant?:
-    | "primary"
-    | "secondary"
-    | "success"
-    | "warning"
-    | "error"
-    | "neutral"
-    | "info";
-  size?: "sm" | "md" | "lg";
+  variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'neutral' | 'info';
+  size?: 'sm' | 'md' | 'lg';
   pill?: boolean;
 }
 
 const Badge = ({
   children,
-  className = "",
-  variant = "primary",
-  size = "md",
+  className = '',
+  variant = 'primary',
+  size = 'md',
   pill = false,
 }: BadgeProps) => {
   const baseClasses = styles.badge;
@@ -40,7 +33,7 @@ const Badge = ({
     lg: styles.lg,
   };
 
-  const pillClass = pill ? styles.pill : "";
+  const pillClass = pill ? styles.pill : '';
 
   return (
     <span

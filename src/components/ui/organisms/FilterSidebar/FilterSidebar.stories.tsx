@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import FilterSidebar from "./FilterSidebar";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import FilterSidebar from './FilterSidebar';
 
 const meta: Meta<typeof FilterSidebar> = {
-  title: "Organisms/FilterSidebar",
+  title: 'Organisms/FilterSidebar',
   component: FilterSidebar,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

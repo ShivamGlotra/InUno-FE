@@ -1,31 +1,31 @@
-import { Meta, StoryObj } from "@storybook/react-vite";
-import Button from "./Button";
+import { Meta, StoryObj } from '@storybook/react-vite';
+import Button from './Button';
 
 const meta: Meta<typeof Button> = {
-  title: "Atoms/Button",
+  title: 'Atoms/Button',
   component: Button,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   argTypes: {
     variant: {
-      control: "select",
+      control: 'select',
       options: [
-        "primary",
-        "secondary",
-        "tertiary",
-        "outline",
-        "danger",
-        "icon-only",
-        "link",
-        "ghost",
+        'primary',
+        'secondary',
+        'tertiary',
+        'outline',
+        'danger',
+        'icon-only',
+        'link',
+        'ghost',
       ],
     },
     size: {
-      control: { type: "select" },
-      options: ["sm", "md", "lg"],
+      control: { type: 'select' },
+      options: ['sm', 'md', 'lg'],
     },
-    isLoading: { control: { type: "boolean" } },
-    disabled: { control: { type: "boolean" } },
-    onClick: { action: "clicked" },
+    isLoading: { control: { type: 'boolean' } },
+    disabled: { control: { type: 'boolean' } },
+    onClick: { action: 'clicked' },
   },
 };
 
@@ -35,82 +35,82 @@ type Story = StoryObj<typeof Button>;
 export const Primary: Story = {
   render: (args) => <Button {...args} />,
   args: {
-    variant: "primary",
-    size: "lg",
+    variant: 'primary',
+    size: 'lg',
     isLoading: false,
     disabled: false,
-    children: "Primary Button",
+    children: 'Primary Button',
   },
 };
 
 export const Secondary: Story = {
   render: (args) => <Button {...args} />,
   args: {
-    variant: "secondary",
-    size: "md",
+    variant: 'secondary',
+    size: 'md',
     isLoading: false,
     disabled: false,
-    children: "Secondary Button",
+    children: 'Secondary Button',
   },
 };
 
 export const Tertiary: Story = {
   args: {
-    variant: "tertiary",
-    size: "sm",
+    variant: 'tertiary',
+    size: 'sm',
     isLoading: false,
     disabled: false,
-    children: "Tertiary Button",
+    children: 'Tertiary Button',
   },
 };
 
 export const Outline: Story = {
   args: {
-    variant: "outline",
-    size: "lg",
+    variant: 'outline',
+    size: 'lg',
     isLoading: false,
     disabled: false,
-    children: "Outline Button",
+    children: 'Outline Button',
   },
 };
 
 export const Danger: Story = {
   args: {
-    variant: "danger",
-    size: "md",
+    variant: 'danger',
+    size: 'md',
     isLoading: false,
     disabled: false,
-    children: "Danger Button",
+    children: 'Danger Button',
   },
 };
 
 export const IconOnly: Story = {
   args: {
-    variant: "icon-only",
-    size: "md",
+    variant: 'icon-only',
+    size: 'md',
     isLoading: false,
     disabled: false,
-    children: "Icon Only Button",
+    children: 'Icon Only Button',
   },
 };
 
 export const Link: Story = {
   args: {
-    variant: "link",
-    size: "md",
+    variant: 'link',
+    size: 'md',
     isLoading: false,
     disabled: false,
-    children: "Link Button",
+    children: 'Link Button',
   },
 };
 
 export const Ghost: Story = {
   args: {
-    variant: "ghost",
-    size: "md",
+    variant: 'ghost',
+    size: 'md',
     isLoading: false,
     disabled: false,
-    children: "Ghost Button",
+    children: 'Ghost Button',
   },
 };
 
@@ -129,7 +129,7 @@ export const Sizes: Story = {
     </div>
   ),
   args: {
-    variant: "primary",
+    variant: 'primary',
     isLoading: false,
     disabled: false,
   },

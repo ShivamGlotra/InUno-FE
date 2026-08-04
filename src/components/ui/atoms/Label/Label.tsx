@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Label.module.css";
+import React from 'react';
+import styles from './Label.module.css';
 
 export interface LabelProps {
   children: React.ReactNode;
@@ -7,11 +7,7 @@ export interface LabelProps {
   required?: boolean;
 }
 
-export default function Label({
-  children,
-  htmlFor,
-  required = false,
-}: LabelProps) {
+export default function Label({ children, htmlFor, required = false }: LabelProps) {
   return (
     <label htmlFor={htmlFor} className={styles.label}>
       {children}

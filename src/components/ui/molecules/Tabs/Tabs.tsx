@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useState, type ReactNode } from "react";
-import styles from "./Tabs.module.css";
+import { useState, type ReactNode } from 'react';
+import styles from './Tabs.module.css';
 
 export interface TabItem {
   id: string;
@@ -14,13 +14,8 @@ export interface TabsProps {
   defaultTab?: string;
 }
 
-export default function Tabs({
-  tabs,
-  defaultTab,
-}: TabsProps) {
-  const [active, setActive] = useState(
-    defaultTab ?? tabs[0]?.id
-  );
+export default function Tabs({ tabs, defaultTab }: TabsProps) {
+  const [active, setActive] = useState(defaultTab ?? tabs[0]?.id);
 
   const current = tabs.find((tab) => tab.id === active);
 
@@ -32,7 +27,7 @@ export default function Tabs({
             key={tab.id}
             type="button"
             role="tab"
-            className={active === tab.id ? styles.active : ""}
+            className={active === tab.id ? styles.active : ''}
             onClick={() => setActive(tab.id)}
           >
             {tab.label}
@@ -40,9 +35,7 @@ export default function Tabs({
         ))}
       </div>
 
-      <div className={styles.content}>
-        {current?.content}
-      </div>
+      <div className={styles.content}>{current?.content}</div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Skeleton.module.css";
+import React from 'react';
+import styles from './Skeleton.module.css';
 
 export interface SkeletonProps {
   width?: string | number;
@@ -7,11 +7,7 @@ export interface SkeletonProps {
   borderRadius?: string | number;
 }
 
-export default function Skeleton({
-  width = "100%",
-  height = 20,
-  borderRadius = 4,
-}: SkeletonProps) {
+export default function Skeleton({ width = '100%', height = 20, borderRadius = 4 }: SkeletonProps) {
   return (
     <div
       className={styles.skeleton}

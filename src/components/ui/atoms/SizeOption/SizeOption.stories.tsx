@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import SizeOption from "./SizeOption";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import SizeOption from './SizeOption';
 
 const meta: Meta<typeof SizeOption> = {
-  title: "Atoms/SizeOption",
+  title: 'Atoms/SizeOption',
   component: SizeOption,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -13,26 +13,26 @@ type Story = StoryObj<typeof SizeOption>;
 
 export const Small: Story = {
   args: {
-    size: "S",
+    size: 'S',
   },
 };
 
 export const Medium: Story = {
   args: {
-    size: "M",
+    size: 'M',
   },
 };
 
 export const Selected: Story = {
   args: {
-    size: "L",
+    size: 'L',
     selected: true,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    size: "XL",
+    size: 'XL',
     disabled: true,
   },
 };

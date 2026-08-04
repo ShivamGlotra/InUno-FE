@@ -1,5 +1,5 @@
-import Link from "@/components/ui/atoms/Link/Link";
-import styles from "./Breadcrumb.module.css";
+import Link from '@/components/ui/atoms/Link/Link';
+import styles from './Breadcrumb.module.css';
 
 export interface BreadcrumbItem {
   label: string;
@@ -22,9 +22,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
               <span>{item.label}</span>
             )}
 
-            {index < items.length - 1 && (
-              <span className={styles.separator}>/</span>
-            )}
+            {index < items.length - 1 && <span className={styles.separator}>/</span>}
           </li>
         ))}
       </ol>

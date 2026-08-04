@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import ProductImageGallery from "./ProductImageGallery";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import ProductImageGallery from './ProductImageGallery';
 
 const meta: Meta<typeof ProductImageGallery> = {
-  title: "Organisms/ProductImageGallery",
+  title: 'Organisms/ProductImageGallery',
   component: ProductImageGallery,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -15,16 +15,16 @@ export const Default: Story = {
   args: {
     images: [
       {
-        src: "https://placehold.co/600x600",
-        alt: "Product front",
+        src: 'https://placehold.co/600x600',
+        alt: 'Product front',
       },
       {
-        src: "https://placehold.co/600x600",
-        alt: "Product side",
+        src: 'https://placehold.co/600x600',
+        alt: 'Product side',
       },
       {
-        src: "https://placehold.co/600x600",
-        alt: "Product back",
+        src: 'https://placehold.co/600x600',
+        alt: 'Product back',
       },
     ],
   },

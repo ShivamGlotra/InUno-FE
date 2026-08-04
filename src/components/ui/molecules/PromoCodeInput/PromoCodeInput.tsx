@@ -1,17 +1,15 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Input from "@/components/ui/atoms/Input/Input";
-import styles from "./PromoCodeInput.module.css";
+import { useState } from 'react';
+import Input from '@/components/ui/atoms/Input/Input';
+import styles from './PromoCodeInput.module.css';
 
 export interface PromoCodeInputProps {
   onApply?: (code: string) => void;
 }
 
-export default function PromoCodeInput({
-  onApply,
-}: PromoCodeInputProps) {
-  const [code, setCode] = useState("");
+export default function PromoCodeInput({ onApply }: PromoCodeInputProps) {
+  const [code, setCode] = useState('');
 
   return (
     <div className={styles.container}>
@@ -21,10 +19,7 @@ export default function PromoCodeInput({
         placeholder="Promo code"
       />
 
-      <button
-        type="button"
-        onClick={() => onApply?.(code)}
-      >
+      <button type="button" onClick={() => onApply?.(code)}>
         Apply
       </button>
     </div>

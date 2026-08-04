@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import CartPage from "./CartPage";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import CartPage from './CartPage';
 
 const meta: Meta<typeof CartPage> = {
-  title: "Organisms/CartPage",
+  title: 'Organisms/CartPage',
   component: CartPage,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

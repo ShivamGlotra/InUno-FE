@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import StrikethroughPrice from "./StrikethroughPrice";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import StrikethroughPrice from './StrikethroughPrice';
 
 const meta: Meta<typeof StrikethroughPrice> = {
-  title: "Atoms/StrikethroughPrice",
+  title: 'Atoms/StrikethroughPrice',
   component: StrikethroughPrice,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -20,6 +20,6 @@ export const Default: Story = {
 export const CanadianDollar: Story = {
   args: {
     amount: 99.99,
-    currency: "CAD",
+    currency: 'CAD',
   },
 };

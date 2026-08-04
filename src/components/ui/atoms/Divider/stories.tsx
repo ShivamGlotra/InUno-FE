@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import Divider from "./Divider";
+import type { Meta, StoryObj } from '@storybook/react';
+import Divider from './Divider';
 
 const meta: Meta<typeof Divider> = {
-  title: "Atoms/Divider",
+  title: 'Atoms/Divider',
   component: Divider,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -13,7 +13,7 @@ type Story = StoryObj<typeof Divider>;
 
 export const Horizontal: Story = {
   args: {
-    orientation: "horizontal",
+    orientation: 'horizontal',
   },
 };
 

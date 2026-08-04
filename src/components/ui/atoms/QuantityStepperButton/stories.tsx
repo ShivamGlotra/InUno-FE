@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import QuantityStepperButton from "./QuantityStepperButton";
+import type { Meta, StoryObj } from '@storybook/react';
+import QuantityStepperButton from './QuantityStepperButton';
 
 const meta: Meta<typeof QuantityStepperButton> = {
-  title: "Atoms/QuantityStepperButton",
+  title: 'Atoms/QuantityStepperButton',
   component: QuantityStepperButton,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -13,12 +13,12 @@ type Story = StoryObj<typeof QuantityStepperButton>;
 
 export const Increase: Story = {
   args: {
-    action: "increase",
+    action: 'increase',
   },
 };
 
 export const Decrease: Story = {
   args: {
-    action: "decrease",
+    action: 'decrease',
   },
 };

@@ -1,7 +1,7 @@
-import CartLineItemSummary from "@/components/ui/molecules/CartLineItemSummary/CartLineItemSummary";
-import OrderSummaryRow from "@/components/ui/molecules/OrderSummaryRow/OrderSummaryRow";
-import Button from "@/components/ui/atoms/Button/Button";
-import styles from "./MiniCartDropdown.module.css";
+import CartLineItemSummary from '@/components/ui/molecules/CartLineItemSummary/CartLineItemSummary';
+import OrderSummaryRow from '@/components/ui/molecules/OrderSummaryRow/OrderSummaryRow';
+import Button from '@/components/ui/atoms/Button/Button';
+import styles from './MiniCartDropdown.module.css';
 
 export default function MiniCartDropdown() {
   return (
@@ -22,11 +22,7 @@ export default function MiniCartDropdown() {
         price={9.99}
       />
 
-      <OrderSummaryRow
-        label="Total"
-        amount={69.97}
-        emphasized
-      />
+      <OrderSummaryRow label="Total" amount={69.97} emphasized />
 
       <Button>View Cart</Button>
     </div>

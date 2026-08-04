@@ -1,11 +1,7 @@
-import Text from "@/components/ui/atoms/Text/Text";
-import styles from "./Toast.module.css";
+import Text from '@/components/ui/atoms/Text/Text';
+import styles from './Toast.module.css';
 
-export type ToastVariant =
-  | "info"
-  | "success"
-  | "warning"
-  | "error";
+export type ToastVariant = 'info' | 'success' | 'warning' | 'error';
 
 export interface ToastProps {
   message: string;
@@ -13,16 +9,9 @@ export interface ToastProps {
   onClose?: () => void;
 }
 
-export default function Toast({
-  message,
-  variant = "info",
-  onClose,
-}: ToastProps) {
+export default function Toast({ message, variant = 'info', onClose }: ToastProps) {
   return (
-    <div
-      className={`${styles.toast} ${styles[variant]}`}
-      role="status"
-    >
+    <div className={`${styles.toast} ${styles[variant]}`} role="status">
       <Text>{message}</Text>
 
       {onClose && (

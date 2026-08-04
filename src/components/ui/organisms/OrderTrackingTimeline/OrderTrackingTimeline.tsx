@@ -1,5 +1,5 @@
-import Text from "@/components/ui/atoms/Text/Text";
-import styles from "./OrderTrackingTimeline.module.css";
+import Text from '@/components/ui/atoms/Text/Text';
+import styles from './OrderTrackingTimeline.module.css';
 
 export interface TrackingEvent {
   title: string;
@@ -11,21 +11,12 @@ export interface OrderTrackingTimelineProps {
   events: TrackingEvent[];
 }
 
-export default function OrderTrackingTimeline({
-  events,
-}: OrderTrackingTimelineProps) {
+export default function OrderTrackingTimeline({ events }: OrderTrackingTimelineProps) {
   return (
     <div className={styles.timeline}>
       {events.map((event) => (
-        <div
-          key={`${event.title}-${event.date}`}
-          className={styles.event}
-        >
-          <div
-            className={`${styles.dot} ${
-              event.completed ? styles.completed : ""
-            }`}
-          />
+        <div key={`${event.title}-${event.date}`} className={styles.event}>
+          <div className={`${styles.dot} ${event.completed ? styles.completed : ''}`} />
 
           <div>
             <strong>{event.title}</strong>

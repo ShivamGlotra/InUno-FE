@@ -1,6 +1,6 @@
-import Price from "@/components/ui/atoms/Price/Price";
-import Text from "@/components/ui/atoms/Text/Text";
-import styles from "./OrderSummaryRow.module.css";
+import Price from '@/components/ui/atoms/Price/Price';
+import Text from '@/components/ui/atoms/Text/Text';
+import styles from './OrderSummaryRow.module.css';
 
 export interface OrderSummaryRowProps {
   label: string;
@@ -14,7 +14,7 @@ export default function OrderSummaryRow({
   emphasized = false,
 }: OrderSummaryRowProps) {
   return (
-    <div className={`${styles.row} ${emphasized ? styles.emphasized : ""}`}>
+    <div className={`${styles.row} ${emphasized ? styles.emphasized : ''}`}>
       <Text>{label}</Text>
       <Price amount={amount} />
     </div>

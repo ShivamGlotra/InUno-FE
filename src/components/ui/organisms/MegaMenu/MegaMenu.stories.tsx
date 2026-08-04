@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import MegaMenu from "./MegaMenu";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import MegaMenu from './MegaMenu';
 
 const meta: Meta<typeof MegaMenu> = {
-  title: "Organisms/MegaMenu",
+  title: 'Organisms/MegaMenu',
   component: MegaMenu,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;
@@ -15,32 +15,32 @@ export const Default: Story = {
   args: {
     columns: [
       {
-        title: "Electronics",
+        title: 'Electronics',
         items: [
-          { label: "Laptops", href: "#" },
-          { label: "Phones", href: "#" },
-          { label: "Audio", href: "#" },
+          { label: 'Laptops', href: '#' },
+          { label: 'Phones', href: '#' },
+          { label: 'Audio', href: '#' },
         ],
       },
       {
-        title: "Home",
+        title: 'Home',
         items: [
-          { label: "Furniture", href: "#" },
-          { label: "Kitchen", href: "#" },
+          { label: 'Furniture', href: '#' },
+          { label: 'Kitchen', href: '#' },
         ],
       },
       {
-        title: "Fashion",
+        title: 'Fashion',
         items: [
-          { label: "Men", href: "#" },
-          { label: "Women", href: "#" },
+          { label: 'Men', href: '#' },
+          { label: 'Women', href: '#' },
         ],
       },
       {
-        title: "Deals",
+        title: 'Deals',
         items: [
-          { label: "Today's Deals", href: "#" },
-          { label: "Clearance", href: "#" },
+          { label: "Today's Deals", href: '#' },
+          { label: 'Clearance', href: '#' },
         ],
       },
     ],

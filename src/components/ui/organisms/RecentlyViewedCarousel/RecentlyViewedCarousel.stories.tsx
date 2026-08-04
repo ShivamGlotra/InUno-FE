@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import RecentlyViewedCarousel from "./RecentlyViewedCarousel";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import RecentlyViewedCarousel from './RecentlyViewedCarousel';
 
 const meta: Meta<typeof RecentlyViewedCarousel> = {
-  title: "Organisms/RecentlyViewedCarousel",
+  title: 'Organisms/RecentlyViewedCarousel',
   component: RecentlyViewedCarousel,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

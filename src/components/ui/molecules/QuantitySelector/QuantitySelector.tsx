@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import QuantityStepperButton from "@/components/ui/atoms/QuantityStepperButton/QuantityStepperButton";
-import Text from "@/components/ui/atoms/Text/Text";
-import styles from "./QuantitySelector.module.css";
+import { useState } from 'react';
+import QuantityStepperButton from '@/components/ui/atoms/QuantityStepperButton/QuantityStepperButton';
+import Text from '@/components/ui/atoms/Text/Text';
+import styles from './QuantitySelector.module.css';
 
 export interface QuantitySelectorProps {
   initialQuantity?: number;
@@ -23,9 +23,7 @@ export default function QuantitySelector({
       <QuantityStepperButton
         action="decrease"
         disabled={quantity <= min}
-        onClick={() =>
-          setQuantity((value) => Math.max(min, value - 1))
-        }
+        onClick={() => setQuantity((value) => Math.max(min, value - 1))}
       />
 
       <Text>{quantity}</Text>
@@ -33,9 +31,7 @@ export default function QuantitySelector({
       <QuantityStepperButton
         action="increase"
         disabled={quantity >= max}
-        onClick={() =>
-          setQuantity((value) => Math.min(max, value + 1))
-        }
+        onClick={() => setQuantity((value) => Math.min(max, value + 1))}
       />
     </div>
   );

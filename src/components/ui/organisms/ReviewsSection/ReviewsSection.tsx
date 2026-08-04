@@ -1,7 +1,7 @@
-import ReviewSnippet from "@/components/ui/molecules/ReviewSnippet/ReviewSnippet";
-import StarRating from "@/components/ui/molecules/StarRating/StarRating";
-import Heading from "@/components/ui/atoms/Heading/Heading";
-import styles from "./ReviewsSection.module.css";
+import ReviewSnippet from '@/components/ui/molecules/ReviewSnippet/ReviewSnippet';
+import StarRating from '@/components/ui/molecules/StarRating/StarRating';
+import Heading from '@/components/ui/atoms/Heading/Heading';
+import styles from './ReviewsSection.module.css';
 
 export default function ReviewsSection() {
   return (

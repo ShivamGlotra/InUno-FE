@@ -1,5 +1,5 @@
-import Image from "@/components/ui/atoms/Image/Image";
-import styles from "./ImageGalleryThumbnail.module.css";
+import Image from '@/components/ui/atoms/Image/Image';
+import styles from './ImageGalleryThumbnail.module.css';
 
 export interface ImageGalleryThumbnailProps {
   src: string;
@@ -17,7 +17,7 @@ export default function ImageGalleryThumbnail({
   return (
     <button
       type="button"
-      className={`${styles.thumbnail} ${selected ? styles.selected : ""}`}
+      className={`${styles.thumbnail} ${selected ? styles.selected : ''}`}
       onClick={onClick}
     >
       <Image src={src} alt={alt} width={72} height={72} />

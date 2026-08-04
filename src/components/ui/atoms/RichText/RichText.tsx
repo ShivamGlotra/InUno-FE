@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./RichText.module.css";
+import React from 'react';
+import styles from './RichText.module.css';
 
 export interface RichTextProps {
   children: React.ReactNode;

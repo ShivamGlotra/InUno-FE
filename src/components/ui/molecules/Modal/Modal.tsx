@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import type { ReactNode } from "react";
-import Heading from "@/components/ui/atoms/Heading/Heading";
-import styles from "./Modal.module.css";
+import type { ReactNode } from 'react';
+import Heading from '@/components/ui/atoms/Heading/Heading';
+import styles from './Modal.module.css';
 
 export interface ModalProps {
   open: boolean;
@@ -11,20 +11,12 @@ export interface ModalProps {
   onClose: () => void;
 }
 
-export default function Modal({
-  open,
-  title,
-  children,
-  onClose,
-}: ModalProps) {
+export default function Modal({ open, title, children, onClose }: ModalProps) {
   if (!open) return null;
 
   return (
     <div className={styles.overlay} onClick={onClose}>
-      <div
-        className={styles.modal}
-        onClick={(event) => event.stopPropagation()}
-      >
+      <div className={styles.modal} onClick={(event) => event.stopPropagation()}>
         <div className={styles.header}>
           {title && <Heading level={3}>{title}</Heading>}
 

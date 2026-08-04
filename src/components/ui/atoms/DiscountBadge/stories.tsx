@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import DiscountBadge from "./DiscountBadge";
+import type { Meta, StoryObj } from '@storybook/react';
+import DiscountBadge from './DiscountBadge';
 
 const meta: Meta<typeof DiscountBadge> = {
-  title: "Atoms/DiscountBadge",
+  title: 'Atoms/DiscountBadge',
   component: DiscountBadge,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

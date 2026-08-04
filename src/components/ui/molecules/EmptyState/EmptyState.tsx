@@ -1,7 +1,7 @@
-import type { ReactNode } from "react";
-import Heading from "@/components/ui/atoms/Heading/Heading";
-import Text from "@/components/ui/atoms/Text/Text";
-import styles from "./EmptyState.module.css";
+import type { ReactNode } from 'react';
+import Heading from '@/components/ui/atoms/Heading/Heading';
+import Text from '@/components/ui/atoms/Text/Text';
+import styles from './EmptyState.module.css';
 
 export interface EmptyStateProps {
   title: string;
@@ -9,11 +9,7 @@ export interface EmptyStateProps {
   action?: ReactNode;
 }
 
-export default function EmptyState({
-  title,
-  description,
-  action,
-}: EmptyStateProps) {
+export default function EmptyState({ title, description, action }: EmptyStateProps) {
   return (
     <div className={styles.empty}>
       <div className={styles.icon}>∅</div>

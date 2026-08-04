@@ -1,5 +1,5 @@
-import Breadcrumb from "@/components/ui/molecules/Breadcrumb/Breadcrumb";
-import styles from "./BreadcrumbBar.module.css";
+import Breadcrumb from '@/components/ui/molecules/Breadcrumb/Breadcrumb';
+import styles from './BreadcrumbBar.module.css';
 
 export interface BreadcrumbBarProps {
   items: {
@@ -8,9 +8,7 @@ export interface BreadcrumbBarProps {
   }[];
 }
 
-export default function BreadcrumbBar({
-  items,
-}: BreadcrumbBarProps) {
+export default function BreadcrumbBar({ items }: BreadcrumbBarProps) {
   return (
     <div className={styles.bar}>
       <Breadcrumb items={items} />

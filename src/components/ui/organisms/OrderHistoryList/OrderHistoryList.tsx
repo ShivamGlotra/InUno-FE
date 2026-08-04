@@ -1,5 +1,5 @@
-import OrderSummaryRow from "@/components/ui/molecules/OrderSummaryRow/OrderSummaryRow";
-import styles from "./OrderHistoryList.module.css";
+import OrderSummaryRow from '@/components/ui/molecules/OrderSummaryRow/OrderSummaryRow';
+import styles from './OrderHistoryList.module.css';
 
 export interface OrderHistoryItem {
   id: string;
@@ -12,9 +12,7 @@ export interface OrderHistoryListProps {
   orders: OrderHistoryItem[];
 }
 
-export default function OrderHistoryList({
-  orders,
-}: OrderHistoryListProps) {
+export default function OrderHistoryList({ orders }: OrderHistoryListProps) {
   return (
     <section className={styles.list}>
       <h2>Order History</h2>
@@ -26,10 +24,7 @@ export default function OrderHistoryList({
             <p>{order.date}</p>
           </div>
 
-          <OrderSummaryRow
-            label={order.status}
-            amount={order.total}
-          />
+          <OrderSummaryRow label={order.status} amount={order.total} />
         </article>
       ))}
     </section>

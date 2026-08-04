@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import AddressBook from "./AddressBook";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import AddressBook from './AddressBook';
 
 const meta: Meta<typeof AddressBook> = {
-  title: "Organisms/AddressBook",
+  title: 'Organisms/AddressBook',
   component: AddressBook,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

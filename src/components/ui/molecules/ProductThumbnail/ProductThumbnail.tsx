@@ -1,6 +1,6 @@
-import Image from "@/components/ui/atoms/Image/Image";
-import WishlistIcon from "@/components/ui/atoms/WishlistIcon/WishlistIcon";
-import styles from "./ProductThumbnail.module.css";
+import Image from '@/components/ui/atoms/Image/Image';
+import WishlistIcon from '@/components/ui/atoms/WishlistIcon/WishlistIcon';
+import styles from './ProductThumbnail.module.css';
 
 export interface ProductThumbnailProps {
   src: string;
@@ -8,11 +8,7 @@ export interface ProductThumbnailProps {
   wishlist?: boolean;
 }
 
-export default function ProductThumbnail({
-  src,
-  alt,
-  wishlist = true,
-}: ProductThumbnailProps) {
+export default function ProductThumbnail({ src, alt, wishlist = true }: ProductThumbnailProps) {
   return (
     <div className={styles.thumbnail}>
       <Image src={src} alt={alt} width={300} height={300} />

@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import PromoCodeInput from "./PromoCodeInput";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import PromoCodeInput from './PromoCodeInput';
 
 const meta: Meta<typeof PromoCodeInput> = {
-  title: "Molecules/PromoCodeInput",
+  title: 'Molecules/PromoCodeInput',
   component: PromoCodeInput,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

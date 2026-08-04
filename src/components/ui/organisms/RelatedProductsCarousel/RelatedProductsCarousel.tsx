@@ -1,6 +1,6 @@
-import ProductCard from "@/components/ui/organisms/ProductCard/ProductCard";
-import Heading from "@/components/ui/atoms/Heading/Heading";
-import styles from "./RelatedProductsCarousel.module.css";
+import ProductCard from '@/components/ui/organisms/ProductCard/ProductCard';
+import Heading from '@/components/ui/atoms/Heading/Heading';
+import styles from './RelatedProductsCarousel.module.css';
 
 export default function RelatedProductsCarousel() {
   return (

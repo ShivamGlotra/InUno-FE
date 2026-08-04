@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import QASection from "./QASection";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import QASection from './QASection';
 
 const meta: Meta<typeof QASection> = {
-  title: "Organisms/QASection",
+  title: 'Organisms/QASection',
   component: QASection,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

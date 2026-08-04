@@ -1,10 +1,10 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
-import TrustBadgesRow from "./TrustBadgesRow";
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import TrustBadgesRow from './TrustBadgesRow';
 
 const meta: Meta<typeof TrustBadgesRow> = {
-  title: "Organisms/TrustBadgesRow",
+  title: 'Organisms/TrustBadgesRow',
   component: TrustBadgesRow,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default meta;

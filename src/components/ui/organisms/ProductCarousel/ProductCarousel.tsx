@@ -1,14 +1,12 @@
-import ProductCard from "@/components/ui/organisms/ProductCard/ProductCard";
-import Heading from "@/components/ui/atoms/Heading/Heading";
-import styles from "./ProductCarousel.module.css";
+import ProductCard from '@/components/ui/organisms/ProductCard/ProductCard';
+import Heading from '@/components/ui/atoms/Heading/Heading';
+import styles from './ProductCarousel.module.css';
 
 export interface ProductCarouselProps {
   title?: string;
 }
 
-export default function ProductCarousel({
-  title = "Featured Products",
-}: ProductCarouselProps) {
+export default function ProductCarousel({ title = 'Featured Products' }: ProductCarouselProps) {
   return (
     <section>
       <Heading level={2}>{title}</Heading>

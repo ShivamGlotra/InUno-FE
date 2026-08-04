@@ -1,6 +1,6 @@
-import ProductCard from "@/components/ui/organisms/ProductCard/ProductCard";
-import Heading from "@/components/ui/atoms/Heading/Heading";
-import styles from "./WishlistGrid.module.css";
+import ProductCard from '@/components/ui/organisms/ProductCard/ProductCard';
+import Heading from '@/components/ui/atoms/Heading/Heading';
+import styles from './WishlistGrid.module.css';
 
 export default function WishlistGrid() {
   return (

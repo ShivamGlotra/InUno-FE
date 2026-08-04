@@ -1,7 +1,7 @@
-import type { ReactNode } from "react";
-import Label from "@/components/ui/atoms/Label/Label";
-import FormHelperText from "@/components/ui/atoms/FormHelperText/FormHelperText";
-import styles from "./FormField.module.css";
+import type { ReactNode } from 'react';
+import Label from '@/components/ui/atoms/Label/Label';
+import FormHelperText from '@/components/ui/atoms/FormHelperText/FormHelperText';
+import styles from './FormField.module.css';
 
 export interface FormFieldProps {
   label: string;
@@ -25,9 +25,7 @@ export default function FormField({
       {children}
 
       {(helperText || error) && (
-        <FormHelperText error={!!error}>
-          {error || helperText}
-        </FormHelperText>
+        <FormHelperText error={!!error}>{error || helperText}</FormHelperText>
       )}
     </div>
   );

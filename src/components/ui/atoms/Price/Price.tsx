@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Price.module.css";
+import React from 'react';
+import styles from './Price.module.css';
 
 export interface PriceProps {
   amount: number;
@@ -7,13 +7,9 @@ export interface PriceProps {
   locale?: string;
 }
 
-export default function Price({
-  amount,
-  currency = "USD",
-  locale = "en-US",
-}: PriceProps) {
+export default function Price({ amount, currency = 'USD', locale = 'en-US' }: PriceProps) {
   const formatted = new Intl.NumberFormat(locale, {
-    style: "currency",
+    style: 'currency',
     currency,
   }).format(amount);
 

@@ -1,6 +1,6 @@
-import RatingStarUnit from "@/components/ui/atoms/RatingStarUnit/RatingStarUnit";
-import Text from "@/components/ui/atoms/Text/Text";
-import styles from "./ReviewSnippet.module.css";
+import RatingStarUnit from '@/components/ui/atoms/RatingStarUnit/RatingStarUnit';
+import Text from '@/components/ui/atoms/Text/Text';
+import styles from './ReviewSnippet.module.css';
 
 export interface ReviewSnippetProps {
   author: string;
@@ -9,20 +9,12 @@ export interface ReviewSnippetProps {
   content: string;
 }
 
-export default function ReviewSnippet({
-  author,
-  rating,
-  title,
-  content,
-}: ReviewSnippetProps) {
+export default function ReviewSnippet({ author, rating, title, content }: ReviewSnippetProps) {
   return (
     <article className={styles.review}>
       <div className={styles.rating}>
         {Array.from({ length: 5 }).map((_, index) => (
-          <RatingStarUnit
-            key={index}
-            filled={index < rating}
-          />
+          <RatingStarUnit key={index} filled={index < rating} />
         ))}
       </div>
 

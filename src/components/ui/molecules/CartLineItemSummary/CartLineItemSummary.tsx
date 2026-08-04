@@ -1,7 +1,7 @@
-import Image from "@/components/ui/atoms/Image/Image";
-import Price from "@/components/ui/atoms/Price/Price";
-import Text from "@/components/ui/atoms/Text/Text";
-import styles from "./CartLineItemSummary.module.css";
+import Image from '@/components/ui/atoms/Image/Image';
+import Price from '@/components/ui/atoms/Price/Price';
+import Text from '@/components/ui/atoms/Text/Text';
+import styles from './CartLineItemSummary.module.css';
 
 export interface CartLineItemSummaryProps {
   name: string;
