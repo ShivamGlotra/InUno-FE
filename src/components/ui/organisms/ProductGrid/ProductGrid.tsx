@@ -15,6 +15,8 @@ export default function ProductGrid({ count = 6 }: ProductGridProps) {
           image="https://placehold.co/300x300"
           price={49.99 + index * 10}
           rating={4}
+          category="Category"
+          reviewCount={100}
         />
       ))}
     </div>

@@ -1,14 +1,131 @@
 .card {
-  width: 100%;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  width: 340px;
+  background: #ffffff;
+  border-radius: 20px;
   overflow: hidden;
-  background: white;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.06),
+    0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.imageArea {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #1a1a1a;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #4f7bee;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.wishlistButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.wishlistButton:hover {
+  background: #ffffff;
 }
 
 .content {
+  padding: 20px 24px 24px;
+}
+
+.category {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: #8a8f98;
+}
+
+.name {
+  margin: 0 0 10px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+.ratingRow {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 8px;
-  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.reviewCount {
+  font-size: 14px;
+  color: #8a8f98;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.originalPrice {
+  font-size: 16px;
+  color: #b0b4bb;
+  text-decoration: line-through;
+}
+
+.addToCartButton {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 1999px !important;
+  background: #4f7bee;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.addToCartButton:hover {
+  background: #052985;
 }

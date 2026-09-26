@@ -13,10 +13,16 @@ type Story = StoryObj<typeof ProductCard>;
 
 export const Default: Story = {
   args: {
+    image: '/images/products/headphones.jpg',
+    discountPercent: 20,
+    category: 'Electronics',
     name: 'Wireless Headphones',
-    image: 'https://placehold.co/300x300',
-    price: 79.99,
-    originalPrice: 99.99,
     rating: 4.5,
+    reviewCount: 120,
+    price: 99.99,
+    originalPrice: 149.99,
+    isWishlisted: false,
+    onWishlistToggle: () => alert('Wishlist toggled!'),
+    onAddToCart: () => alert('Added to cart!'),
   },
 };

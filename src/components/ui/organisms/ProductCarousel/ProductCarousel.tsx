@@ -17,6 +17,8 @@ export default function ProductCarousel({ title = 'Featured Products' }: Product
           image="https://placehold.co/300x300"
           price={79.99}
           rating={4.5}
+          category="Electronics"
+          reviewCount={120}
         />
 
         <ProductCard
@@ -24,6 +26,8 @@ export default function ProductCarousel({ title = 'Featured Products' }: Product
           image="https://placehold.co/300x300"
           price={129.99}
           rating={4}
+          category="Electronics"
+          reviewCount={80}
         />
 
         <ProductCard
@@ -31,6 +35,8 @@ export default function ProductCarousel({ title = 'Featured Products' }: Product
           image="https://placehold.co/300x300"
           price={49.99}
           rating={4.5}
+          category="Electronics"
+          reviewCount={200}
         />
       </div>
     </section>

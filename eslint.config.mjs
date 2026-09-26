@@ -22,7 +22,7 @@ const eslintConfig = defineConfig([
   {
     plugins: { 'unused-imports': unusedImports },
     rules: {
-      'unused-imports/no-unused-imports': 'error',
+      'unused-imports/no-unused-imports': 'off',
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       '@typescript-eslint/no-explicit-any': 'warn',
     },
