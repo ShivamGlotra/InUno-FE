@@ -6,7 +6,7 @@ import styles from './Header.module.css';
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Logo src="/images/header_logo.png" alt="Logo" text="Logo" />
+      <Logo src="/images/header_logo.png" alt="Logo" text="Logo" href="/" />
 
       <div className={styles.search}>
         <SearchBar placeholder="Search products..." />
