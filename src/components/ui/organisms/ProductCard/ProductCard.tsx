@@ -6,34 +6,26 @@ import styles from './ProductCard.module.css';
 import Button from '../../atoms/Button';
 import { HeartIcon, StarIcon, CartIcon } from '@/app/icons/product-card-icon';
 import Image from '@/components/ui/atoms/Image/Image';
+import { Product } from '@/types/productType';
 
-export interface ProductCardProps {
-  image: string;
-  discountPercent?: number;
-  category: string;
-  name: string;
-  rating: number;
-  reviewCount: number;
-  price: number;
-  originalPrice?: number;
-  isWishlisted?: boolean;
-  onWishlistToggle?: () => void;
-  onAddToCart?: () => void;
-}
+type ProductCardProps = {
+  product: Product;
+};
 
-export default function ProductCard({
-  image,
-  discountPercent,
-  category,
-  name,
-  rating,
-  reviewCount,
-  price,
-  originalPrice,
-  isWishlisted = false,
-  onWishlistToggle,
-  onAddToCart,
-}: ProductCardProps) {
+const ProductCard = ({ product }: ProductCardProps) => {
+  const {
+    name,
+    image,
+    discountPercent,
+    onWishlistToggle,
+    isWishlisted,
+    category,
+    rating,
+    reviewCount,
+    originalPrice,
+    price,
+    onAddToCart,
+  } = product;
   return (
     <div className={styles.card}>
       <div className={styles.imageArea}>
@@ -47,7 +39,7 @@ export default function ProductCard({
           onClick={onWishlistToggle}
           aria-label={isWishlisted ? 'Remove from wishlist' : 'Add to wishlist'}
         >
-          <HeartIcon filled={isWishlisted} />
+          <HeartIcon filled={isWishlisted || false} />
         </Button>
       </div>
 
@@ -78,4 +70,6 @@ export default function ProductCard({
       </div>
     </div>
   );
-}
+};
+
+export default ProductCard;

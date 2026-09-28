@@ -1,6 +1,4 @@
-import Header from '@/components/ui/organisms/Header/Header';
 import HeroBanner from '@/components/ui/organisms/HeroBanner';
-import Navbar from '@/components/ui/organisms/Navbar/Navbar';
 import Icon from '@/components/ui/atoms/Icon';
 import CardContainer from '@/containers/CardContainer/CardContainer';
 import {
@@ -17,8 +15,6 @@ import Footer from '@/components/ui/organisms/Footer';
 const Home = () => {
   return (
     <>
-      <Header />
-      <Navbar />
       <HeroBanner title="Welcome to Our Store" />
       <CardContainer
         cards={cardData.map((card) => ({
@@ -67,7 +63,6 @@ const Home = () => {
           color: '#33FF57',
         }))}
       />
-      <Footer />
     </>
   );
 };

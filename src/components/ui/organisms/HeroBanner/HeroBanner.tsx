@@ -26,7 +26,9 @@ export default function HeroBanner({
 
         {description && <Text>{description}</Text>}
 
-        <Button>{buttonLabel}</Button>
+        <Button variant="primary" size="lg" href="/products">
+          {buttonLabel}
+        </Button>
       </div>
     </section>
   );

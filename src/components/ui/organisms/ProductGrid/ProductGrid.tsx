@@ -1,14 +1,14 @@
-import ProductCard from '@/components/ui/organisms/ProductCard/ProductCard';
 import styles from './ProductGrid.module.css';
 
-export interface ProductGridProps {
-  count?: number;
-}
+// export interface ProductGridProps {
+//   count?: number;
+// }
 
-export default function ProductGrid({ count = 6 }: ProductGridProps) {
+const ProductGrid = ({ children }: { children: React.ReactNode }) => {
+  console.log('ProductGrid children:', children);
   return (
     <div className={styles.grid}>
-      {Array.from({ length: count }).map((_, index) => (
+      {/* {Array.from({ length: count }).map((_, index) => (
         <ProductCard
           key={index}
           name={`Product ${index + 1}`}
@@ -18,7 +18,10 @@ export default function ProductGrid({ count = 6 }: ProductGridProps) {
           category="Category"
           reviewCount={100}
         />
-      ))}
+      ))} */}
+      {children}
     </div>
   );
-}
+};
+
+export default ProductGrid;
