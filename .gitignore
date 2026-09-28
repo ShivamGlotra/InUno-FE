@@ -45,3 +45,5 @@ next-env.d.ts
 /initEcommerce.sh
 *storybook.log
 storybook-static
+
+tests/productsSampleData.ts
