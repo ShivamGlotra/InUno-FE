@@ -7,6 +7,7 @@ import Button from '../../atoms/Button';
 import { HeartIcon, StarIcon, CartIcon } from '@/app/icons/product-card-icon';
 import Image from '@/components/ui/atoms/Image/Image';
 import { Product } from '@/types/productType';
+import Link from '../../atoms/Link';
 
 type ProductCardProps = {
   product: Product;
@@ -27,7 +28,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
     onAddToCart,
   } = product;
   return (
-    <div className={styles.card}>
+    <Link className={styles.card} href={`/products/${product.slug}/${product.id}`}>
       <div className={styles.imageArea}>
         <Image src={image} alt={name} className={styles.image} width={300} height={300} />
 
@@ -68,7 +69,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           Add to cart
         </Button>
       </div>
-    </div>
+    </Link>
   );
 };
 

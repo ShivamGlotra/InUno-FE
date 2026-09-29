@@ -1,14 +1,18 @@
-import { getProductByID } from '@/lib/products';
+import ProductDetail from '@/components/ui/organisms/ProductDetail/ProductDetail';
+import { getProductByID } from '@/lib/fetch-products';
 
 type Props = {
-  searchParams: Promise<{ slug: string; id: string }>;
+  params: Promise<{ slug: string; id: string }>;
 };
 
-const ProductsPage = async ({ searchParams }: Props) => {
-  const { slug, id } = await searchParams;
+const ProductDetailPage = async ({ params }: Props) => {
+  const { slug, id } = await params;
+
+  console.log('Params:', { slug, id });
+
   const products = await getProductByID({ slug, id });
 
-  return <>{products.name}</>;
+  return <ProductDetail product={products} />;
 };
 
-export default ProductsPage;
+export default ProductDetailPage;

@@ -1,13 +1,15 @@
+'use client';
+
 import styles from './ProductImageCarousel.module.css';
-import { Product } from '@/types/productType';
+import { ProductImage } from '@/types/productType';
 import { useState } from 'react';
 import Button from '../../atoms/Button';
-import Image from 'next/image';
-import { getSampleImages } from '../../../../../tests/productsSampleData';
+import Image from '@/components/ui/atoms/Image/Image';
+import { getSampleImages } from '@/tests/productsSampleData';
 
 export interface ProductCarouselProps {
   alt?: string;
-  productImage?: Product[];
+  productImage?: ProductImage[];
 }
 
 const ArrowLeft = () => (
