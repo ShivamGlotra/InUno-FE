@@ -1,5 +1,5 @@
 import { Product } from '@/types/productType';
-import { ProductSampleData } from '@/components/ui/organisms/ProductList/sampledata'; // delete it after
+import { ProductSampleData } from '@/tests/productsSampleData'; // delete it after
 
 type ProductParams = {
   search?: string;
@@ -67,15 +67,22 @@ export const getProducts = async ({
 };
 
 export const getProductByID = async ({ slug, id }: ProductByIDParams): Promise<Product> => {
-  const params = new URLSearchParams();
-  params.set('slug', slug);
-  params.set('id', id);
+  // const params = new URLSearchParams();
+  // params.set('slug', slug);
+  // params.set('id', id);
+  // // catching - Implement Later
+  // const res = await fetch(`${process.env.API_URL}/products?${params}`, {
+  //   cache: 'no-store', // or use revalidate depending on your caching strategy
+  // });
+  // if (!res.ok) throw new Error('Failed to fetch products');
+  // return res.json();
 
-  // catching - Implement Later
-  const res = await fetch(`${process.env.API_URL}/products?${params}`, {
-    cache: 'no-store', // or use revalidate depending on your caching strategy
-  });
+  const product = ProductSampleData.find((p) => p.slug === slug && p.id === id);
 
-  if (!res.ok) throw new Error('Failed to fetch products');
-  return res.json();
+  console.log(`Fetching product by ID: slug=${slug}, id=${id}`);
+  console.log('Found product:', product);
+
+  if (!product) throw new Error('Product not found');
+
+  return product;
 };

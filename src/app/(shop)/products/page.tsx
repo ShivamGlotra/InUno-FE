@@ -1,5 +1,5 @@
 import ProductList from '@/components/ui/organisms/ProductList';
-import { getProducts } from '@/lib/products';
+import { getProducts } from '@/lib/fetch-products';
 
 type Props = {
   searchParams: Promise<{ search?: string; sort?: string; category?: string; page?: number }>;
