@@ -10,12 +10,23 @@ import {
 } from '@/data/homePage-data';
 import ClearBackgroundContainerProps from '@/containers/CategoryContainer/NoBackgroundContainer/Container';
 import WhiteBackgroundContainer from '@/containers/CategoryContainer/WhiteBGContainer/Container';
-import Footer from '@/components/ui/organisms/Footer';
+import LandingHeroBannerContainer from '@/containers/LandingHeroBannerContainer/LandingHeroBannerContainer';
 
 const Home = () => {
   return (
     <>
-      <HeroBanner title="Welcome to Our Store" />
+      <LandingHeroBannerContainer
+        badgeTitle="Exclusive Offer"
+        heroBannerProps={{
+          title: 'Summer Sale',
+          subtitle: 'Up to 50% off',
+          description:
+            "Discover our exclusive summer collection and enjoy amazing discounts on your favorite products. Don't miss out on this limited-time offer!",
+          buttonLabel: 'Shop Now',
+          secondaryButtonLabel: 'Ask Assistant',
+        }}
+      />
+
       <CardContainer
         cards={cardData.map((card) => ({
           icon: (

@@ -1,16 +1,42 @@
 .hero {
-  min-height: 420px;
   display: flex;
   align-items: center;
+  height: 100%;
+  min-height: 420px;
   padding: 48px;
-  background-color: #f3f4f6;
-  background-size: cover;
-  background-position: center;
+  box-sizing: border-box;
 }
 
 .content {
-  max-width: 550px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+  min-width: 0;
+}
+
+.subtitle {
+  display: block;
+  font-style: normal;
+  color: #9aa1b2;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.buttonGrid {
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
+  margin-top: 16px;
+}
+
+.buttonGrid > * {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 0;
+    padding: 24px;
+  }
 }

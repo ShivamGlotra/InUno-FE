@@ -15,5 +15,7 @@ export const Default: Story = {
   args: {
     title: 'Everything you need, all in one place.',
     description: 'Discover our latest products and deals.',
+    buttonLabel: 'Shop Now',
+    secondaryButtonLabel: 'Ask Assistant',
   },
 };
