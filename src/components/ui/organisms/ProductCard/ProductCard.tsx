@@ -26,9 +26,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
     originalPrice,
     price,
     onAddToCart,
-  } = product;
+  } = product || {};
   return (
-    <Link className={styles.card} href={`/products/${product.slug}/${product.id}`}>
+    <Link className={styles.card} href={`/products/${product?.slug}/${product?.id}`}>
       <div className={styles.imageArea}>
         <Image src={image} alt={name} className={styles.image} width={300} height={300} />
 
@@ -54,13 +54,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
               <StarIcon key={i} filled={i < Math.round(rating)} />
             ))}
           </div>
-          <span className={styles.reviewCount}>({reviewCount.toLocaleString()})</span>
+          <span className={styles.reviewCount}>({reviewCount?.toLocaleString()})</span>
         </div>
 
         <div className={styles.priceRow}>
-          <span className={styles.price}>${price.toFixed(2)}</span>
+          <span className={styles.price}>${price?.toFixed(2)}</span>
           {originalPrice && (
-            <span className={styles.originalPrice}>${originalPrice.toFixed(2)}</span>
+            <span className={styles.originalPrice}>${originalPrice?.toFixed(2)}</span>
           )}
         </div>
 

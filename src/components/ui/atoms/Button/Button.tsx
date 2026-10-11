@@ -1,5 +1,6 @@
+'use client';
 import clsx from 'clsx';
-import { ButtonHTMLAttributes } from 'react';
+import { ButtonHTMLAttributes, useState } from 'react';
 import Link from 'next/link';
 import styles from './Button.module.css';
 
@@ -22,21 +23,47 @@ const Button: React.FC<ButtonProps> = ({
   className,
   children,
   href,
+  onClick,
   ...props
 }) => {
-  const buttonClassNames = clsx(styles.base, styles[variant], styles[size], className);
+  const isDisabled = disabled || isLoading;
+  const buttonClassNames = clsx(
+    styles.base,
+    styles[variant],
+    styles[size],
+    isDisabled && styles.disabled,
+    className,
+  );
 
   if (href) {
     return (
-      <Link className={buttonClassNames} href={href}>
-        {children}
+      <Link
+        className={buttonClassNames}
+        href={href}
+        aria-disabled={isDisabled || undefined}
+        tabIndex={isDisabled ? -1 : undefined}
+        onClick={(e) => {
+          if (isDisabled) {
+            e.preventDefault(); // block navigation while disabled/loading
+            return;
+          }
+          onClick?.(e as unknown as React.MouseEvent<HTMLButtonElement>);
+        }}
+      >
+        {isLoading ? 'Loading...' : children}
       </Link>
     );
   }
 
   return (
-    <button className={buttonClassNames} disabled={disabled || isLoading} {...props}>
-      {isLoading ? 'loading...' : children}
+    <button
+      className={buttonClassNames}
+      disabled={isDisabled}
+      aria-busy={isLoading || undefined}
+      onClick={onClick}
+      {...props}
+    >
+      {isLoading ? 'Loading...' : children}
     </button>
   );
 };
