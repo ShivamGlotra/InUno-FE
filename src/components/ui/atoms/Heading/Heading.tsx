@@ -1,10 +1,19 @@
 import React from 'react';
 import styles from './Heading.module.css';
 
-export type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
-export type HeadingFontSize = 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl';
+export type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+export type HeadingFontSize =
+  'tiny' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl';
 export type HeadingColor =
-  'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'neutral' | 'info';
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'warning'
+  | 'error'
+  | 'neutral'
+  | 'info'
+  | 'basic'
+  | 'subtitle';
 export type HeadingWeight = 'normal' | 'medium' | 'semibold' | 'bold' | 'extrabold';
 export type HeadingAlign = 'left' | 'center' | 'right';
 
@@ -26,15 +35,20 @@ export interface HeadingProps extends Omit<React.HTMLAttributes<HTMLHeadingEleme
 
 /** Visual size used when `fontSize` is not passed. */
 const DEFAULT_SIZE_BY_LEVEL: Record<HeadingLevel, HeadingFontSize> = {
-  1: '4xl',
-  2: '3xl',
-  3: '2xl',
-  4: 'xl',
-  5: 'lg',
-  6: 'md',
+  1: '6xl',
+  2: '5xl',
+  3: '4xl',
+  4: '3xl',
+  5: '2xl',
+  6: 'xl',
+  7: 'lg',
+  8: 'md',
+  9: 'sm',
+  10: 'tiny',
 };
 
 const SIZE_CLASS: Record<HeadingFontSize, string> = {
+  tiny: styles.sizeTiny,
   sm: styles.sizeSm,
   md: styles.sizeMd,
   lg: styles.sizeLg,
@@ -54,6 +68,8 @@ const COLOR_CLASS: Record<HeadingColor, string> = {
   error: styles.colorError,
   neutral: styles.colorNeutral,
   info: styles.colorInfo,
+  basic: styles.colorBasic,
+  subtitle: styles.colorSubtitle,
 };
 
 const WEIGHT_CLASS: Record<HeadingWeight, string> = {

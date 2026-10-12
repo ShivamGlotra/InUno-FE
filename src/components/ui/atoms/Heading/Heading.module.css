@@ -16,6 +16,11 @@
 }
 
 /* ---------- Sizes ---------- */
+.sizeTiny {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+}
 .sizeSm {
   font-size: 14px;
   line-height: 1.4;
@@ -87,7 +92,12 @@
 .colorInfo {
   color: var(--color-info, #0284c7);
 }
-
+.colorBasic {
+  color: var(--color-basic, black);
+}
+.colorSubtitle {
+  color: var(--heading-subtitle-color, #9aa1b2);
+}
 /* ---------- Weight ---------- */
 .weightNormal {
   font-weight: 400;

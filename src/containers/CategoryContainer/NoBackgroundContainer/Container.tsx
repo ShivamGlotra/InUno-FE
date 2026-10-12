@@ -24,9 +24,8 @@ const ClearBackgroundContainer = ({ categories }: ClearBackgroundContainerProps)
             {/* <span className={styles.chevron}>&gt;</span> */}
           </a>
         </div>
-        <div className={styles.categoryContainer}>
-          <CategoryTileGrid categories={categories} />
-        </div>
+        {/* <div className={styles.categoryContainer}> */}
+        <CategoryTileGrid categories={categories} />
       </div>
     </section>
   );

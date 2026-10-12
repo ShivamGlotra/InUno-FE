@@ -14,7 +14,7 @@ import LandingHeroBannerContainer from '@/containers/LandingHeroBannerContainer/
 
 const Home = () => {
   return (
-    <>
+    <main className="container">
       <LandingHeroBannerContainer
         badgeTitle="Exclusive Offer"
         heroBannerProps={{
@@ -26,34 +26,23 @@ const Home = () => {
           secondaryButtonLabel: 'Ask Assistant',
         }}
       />
-
-      <CardContainer
-        cards={cardData.map((card) => ({
-          icon: (
-            <Icon size="lg" label={card.title}>
-              {card.icon}
-            </Icon>
-          ),
-          title: card.title,
-          description: card.description,
-        }))}
-      />
+      <CardContainer cards={cardData} />
       <ClearBackgroundContainerProps
-        categories={categoryData.map((category) => ({
-          id: category.id,
-          name: category.name,
-          itemCount: category.itemCount,
-          badge: category.badge,
-          color: category.color,
-        }))}
-      />
-      <WhiteBackgroundContainer
         categories={todayDealProducts.map((product, index) => ({
           id: `today-deal-${index}`,
           name: product.name,
           itemCount: '1',
           badge: 'Deal',
           color: '#FF5733',
+        }))}
+      />
+      {/* <ClearBackgroundContainerProps
+        categories={categoryData.map((category) => ({
+          id: category.id,
+          name: category.name,
+          itemCount: category.itemCount,
+          badge: category.badge,
+          color: category.color,
         }))}
       />
       <ClearBackgroundContainerProps
@@ -64,8 +53,8 @@ const Home = () => {
           badge: 'Trending',
           color: '#33C1FF',
         }))}
-      />
-      <WhiteBackgroundContainer
+      /> */}
+      <ClearBackgroundContainerProps
         categories={recommendedProducts.map((product, index) => ({
           id: `recommended-${index}`,
           name: product.name,
@@ -74,7 +63,7 @@ const Home = () => {
           color: '#33FF57',
         }))}
       />
-    </>
+    </main>
   );
 };
 export default Home;

@@ -2,19 +2,22 @@ const styles = {
   chevron: 'transition: transform 0.2s ease',
 };
 
-export const ChevronIcon = () => (
+export const ChevronIcon = ({ direction }: { direction: 'up' | 'down' }) => (
   <svg
-    className={styles.chevron}
     width="14"
     height="14"
-    viewBox="0 0 24 24"
+    viewBox="0 0 14 14"
     fill="none"
     aria-hidden="true"
+    style={{
+      transform: direction === 'up' ? 'rotate(180deg)' : 'none',
+      transition: 'transform 0.2s ease',
+    }}
   >
     <path
-      d="M6 9l6 6 6-6"
+      d="M2.5 5 7 9.5 11.5 5"
       stroke="currentColor"
-      strokeWidth="1.8"
+      strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -23,8 +26,22 @@ export const ChevronIcon = () => (
 
 export const SearchIcon = ({ size = 22 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-    <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="1.6" />
-    <path d="M20 20l-3.5-3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    <circle
+      cx="11"
+      cy="11"
+      r="7"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M16.6569 16.6569L20.5 20.5"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
