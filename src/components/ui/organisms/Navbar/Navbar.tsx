@@ -170,7 +170,11 @@ export default function Navbar({
                           onClick={() => toggleDropdown(item.label)}
                         >
                           {item.label}
-                          <ChevronIcon />
+                          {isDropdownOpen ? (
+                            <ChevronIcon direction="up" />
+                          ) : (
+                            <ChevronIcon direction="down" />
+                          )}
                         </button>
 
                         <ul

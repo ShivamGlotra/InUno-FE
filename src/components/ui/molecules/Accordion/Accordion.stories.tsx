@@ -8,20 +8,42 @@ const meta: Meta<typeof Accordion> = {
 };
 
 export default meta;
-
 type Story = StoryObj<typeof Accordion>;
 
 export const Default: Story = {
   args: {
-    title: 'Product Information',
-    children: 'This section contains product information.',
+    title: 'Accordion Title',
+    children: (
+      <p>
+        This is the content of the accordion. You can put any ReactNode here, such as text, images,
+        or other components.
+      </p>
+    ),
   },
 };
 
-export const Open: Story = {
+export const OpenByDefault: Story = {
   args: {
-    title: 'Shipping Information',
-    children: 'Free shipping is available on eligible orders.',
+    title: 'Accordion Title',
     defaultOpen: true,
+    children: (
+      <p>
+        This accordion is open by default. You can put any ReactNode here, such as text, images, or
+        other components.
+      </p>
+    ),
+  },
+};
+
+export const ChevronVariant: Story = {
+  args: {
+    title: 'Accordion Title',
+    variant: 'chevron',
+    children: (
+      <p>
+        This accordion uses the chevron variant for the toggle icon. You can put any ReactNode here,
+        such as text, images, or other components.
+      </p>
+    ),
   },
 };

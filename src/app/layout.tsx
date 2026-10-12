@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      {' '}
+      {/* Use the environment variable to conditionally display the shipping info only on the landing page */}
+      {/* {process.env.NEXT_PUBLIC_SHOW_SHIPPING_INFO === 'true' && (
+      )} */}
       <Header text="Free shipping on orders over $50!" href="/shipping-info" />
       <Navbar />
       <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>

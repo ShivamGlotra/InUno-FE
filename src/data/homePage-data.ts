@@ -1,21 +1,28 @@
+import {
+  FreeShippingIcon,
+  Support247Icon,
+  SecurePaymentIcon,
+  EasyReturnIcon,
+} from '@/components/common/customSVGIcons/LandignPageCardWidgetIcons';
+
 export const cardData = [
   {
-    icon: 'star',
+    icon: FreeShippingIcon,
     title: 'Free Shipping',
     description: 'On orders over $49',
   },
   {
-    icon: 'support',
+    icon: Support247Icon,
     title: '24/7 Support',
     description: 'We are here to help you anytime',
   },
   {
-    icon: 'shield',
+    icon: SecurePaymentIcon,
     title: 'Secure Payment',
     description: 'Your payment information is safe with us',
   },
   {
-    icon: 'return',
+    icon: EasyReturnIcon,
     title: 'Easy Returns',
     description: 'Hassle-free returns within 30 days',
   },

@@ -2,7 +2,8 @@ import HeroBanner, { type HeroBannerProps } from '@/components/ui/organisms/Hero
 import Image from '@/components/ui/atoms/Image/Image';
 import styles from './LandingHeroBanner.module.css';
 
-const FALLBACK_LIFESTYLE_IMAGE = 'https://picsum.photos/seed/picsum/1200/900';
+const FALLBACK_LIFESTYLE_IMAGE = '/images/landingHeroBanner.png';
+// /Users/shivam/repositories/in-uno-fe/public/images/landingHeroBanner.png
 
 const DEFAULT_HERO_BANNER_PROPS: HeroBannerProps = {
   title: 'Summer Sale',
@@ -36,7 +37,6 @@ const LandingHeroBanner = ({
         <div className={styles.bannerContainer}>
           <HeroBanner {...DEFAULT_HERO_BANNER_PROPS} eyebrow={badgeTitle} {...heroBannerProps} />
         </div>
-
         <div className={styles.imageContainer}>
           <Image className={styles.image} src={lifestyleImage} alt="" width={1200} height={900} />
         </div>
