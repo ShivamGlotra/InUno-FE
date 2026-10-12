@@ -1,22 +1,19 @@
 .landingHeroBanner {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   width: 100%;
-  box-sizing: border-box;
+  background: var(--color-surface, #ffffff);
 }
 
-.badge {
-  align-self: flex-start;
-}
-
-/* One card, split 50 / 50 */
+/* Flat layout: text on the left, rounded image on the right. No card chrome. */
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 8px 0 48px;
-  overflow: hidden;
-  border: 1px solid var(--line);
+  gap: 24px;
+  align-items: stretch;
+  width: 100%;
+  max-width: var(--container-max, 1680px);
+  margin: 0 auto;
+  padding: 18px 28px;
+  box-sizing: border-box;
 }
 
 .bannerContainer {
@@ -26,7 +23,9 @@
 .imageContainer {
   position: relative;
   min-width: 0;
-  min-height: 420px;
+  min-height: 494px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .imageContainer img {
@@ -40,9 +39,12 @@
 @media (max-width: 768px) {
   .content {
     grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
   }
 
   .imageContainer {
-    min-height: 280px;
+    min-height: 260px;
+    border-radius: 14px;
   }
 }

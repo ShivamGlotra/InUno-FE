@@ -1,18 +1,29 @@
-import Logo from '@/components/ui/atoms/Logo/Logo';
-import SearchBar from '@/components/ui/molecules/SearchBar/SearchBar';
-import AccountMenuTrigger from '@/components/ui/molecules/AccountMenuTrigger/AccountMenuTrigger';
+import Link from '@/components/ui/atoms/Link/Link';
 import styles from './Header.module.css';
 
-export default function Header() {
+export interface HeaderProps {
+  /** Text shown in the thin black strip. Leave empty for a plain strip. */
+  text?: string;
+  /** Optional link that wraps the text */
+  href?: string;
+  className?: string;
+}
+
+export default function Header({ text, href, className = '' }: HeaderProps) {
   return (
-    <header className={styles.header}>
-      <Logo src="/images/header_logo.png" alt="Logo" text="Logo" href="/" />
-
-      <div className={styles.search}>
-        <SearchBar placeholder="Search products..." />
-      </div>
-
-      <AccountMenuTrigger name="Account" />
-    </header>
+    <div
+      className={`${styles.header} ${className}`}
+      role={text ? 'region' : undefined}
+      aria-label={text ? 'Announcement' : undefined}
+    >
+      {text &&
+        (href ? (
+          <Link href={href} className={styles.link}>
+            {text}
+          </Link>
+        ) : (
+          <span>{text}</span>
+        ))}
+    </div>
   );
 }

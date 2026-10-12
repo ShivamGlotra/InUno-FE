@@ -1,216 +1,385 @@
-.navbar {
+.header {
+  position: relative;
   width: 100%;
-  height: 64px;
-
   background: #ffffff;
-  /* border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5; */
+  z-index: 50;
+}
+
+/* position: relative so the mobile search overlay can cover the whole bar */
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 72px;
   display: flex;
   align-items: center;
-
+  background: #ffffff;
   font-family: inherit;
 }
 
+/* logo | centred links | search + icons */
 .container {
   width: 100%;
-  max-width: 1680px;
+  max-width: var(--container-max, 1680px);
   height: 100%;
-
   margin: 0 auto;
   padding: 0 32px;
+  box-sizing: border-box;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
+  column-gap: 24px;
 }
 
-.navigation {
-  width: 100%;
-  height: 100%;
+/* Logo */
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: start;
+  line-height: 1;
+  color: #111111;
+  text-decoration: none;
+}
 
+.brandName {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.brandTagline {
+  align-self: center;
+  margin-top: 3px;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+}
+
+.logoImage {
+  display: block;
+  height: auto;
+  width: auto;
+}
+
+/* Centre navigation */
+.navigation {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .navList {
   display: flex;
   align-items: center;
-  gap: 8px;
-
-  height: 100%;
-
-  margin: 0 auto;
+  gap: 48px;
+  margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .navItem {
+  --nav-font-size: 18px;
+
+  position: relative;
   display: flex;
   align-items: center;
-  height: 100%;
 }
 
 /*
- * Your NavLink molecule provides the actual <Link>.
- * These selectors style the elements inside the molecule.
+ * One shared look for every top-level item (Home, Shop, Product, About).
+ * Change the size via --nav-font-size above. The !important flags override
+ * whatever hover / active styles the NavLink molecule ships with.
  */
+.navItem > a,
+.navItem > a:hover,
+.navItem > a:focus,
+.navItem > a:active,
+.navItem > a[class*='active'],
+.navItem > * > a,
+.navItem > * > a:hover,
+.navItem > * > a[class*='active'] {
+  color: #111111 !important;
+  background: none !important;
+  opacity: 1 !important;
+  text-decoration: none !important;
+  transform: none !important;
+  transition: none !important;
+  font-size: var(--nav-font-size) !important;
+  font-weight: 400 !important;
+}
 
-.navItem :global(a) {
-  display: flex;
-  align-items: center;
-
-  height: 38px;
-  padding: 0 18px;
-
-  border-radius: 20px;
-
-  color: #666666;
-  text-decoration: none;
-
-  font-size: 14px;
-  font-weight: 600;
+.navItem > a,
+.navItem > * > a {
   white-space: nowrap;
+  padding: 8px 0;
+}
 
+/* Dropdown trigger (Shop, Product) */
+.dropdownTrigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border: 0;
+  background: none;
+  color: #111111;
+  font: inherit;
+  font-size: var(--nav-font-size);
+  font-weight: 400;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.chevron {
+  transition: transform 0.2s ease;
+}
+
+.dropdownTrigger[aria-expanded='true'] .chevron {
+  transform: rotate(180deg);
+}
+
+/* Dropdown panel */
+.dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  min-width: 200px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -4px);
   transition:
-    color 0.15s ease,
-    background-color 0.15s ease;
+    opacity 0.15s ease,
+    transform 0.15s ease,
+    visibility 0.15s;
 }
 
-.navItem :global(a:hover) {
-  color: #222222;
-  background-color: #f5f5f5;
+.dropdownOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
 }
 
-/*
- * Active category
- *
- * Your NavLink adds styles.active when active=true.
- * Because the class comes from NavLink.module.css,
- * use :global to target it if needed.
- */
-
-.navItem :global(a[class*='active']) {
-  color: #2874f0;
-  background-color: #edf3ff;
+.dropdownLink {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #111111;
+  text-decoration: none;
+  font-size: 15px;
+  white-space: nowrap;
 }
 
-/* Sell on InUno */
+.dropdownLink:hover {
+  background: #f5f5f5;
+}
 
-.sellLink {
+/* Right side: [ search bar ] [ icons ] */
+.actions {
   display: flex;
   align-items: center;
-  gap: 7px;
-
-  margin-left: 24px;
-
-  color: #2874f0;
-  text-decoration: none;
-
-  font-size: 14px;
-  font-weight: 600;
-  white-space: nowrap;
-
-  transition: color 0.15s ease;
+  justify-content: flex-end;
+  gap: 20px;
+  min-width: 0;
 }
 
-.sellLink:hover {
-  color: #1258c7;
+.iconButton {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #111111;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
 }
 
-.arrow {
-  font-size: 20px;
-  line-height: 1;
-  margin-top: -2px;
+.iconButton:hover {
+  opacity: 0.6;
+}
+
+/* Search bar: grows into the empty space between the links and the icons */
+.searchForm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 380px;
+  height: 44px;
+  padding: 0 14px;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border: 1px solid #2874f0;
+  border-radius: 999px;
+  box-shadow: 0 0 0 3px rgba(40, 116, 240, 0.14);
+
+  animation: searchIn 0.18s ease-out;
+  transform-origin: right center;
+}
+
+@keyframes searchIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.searchIcon {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: #666666;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #111111;
+  font: inherit;
+  font-size: 15px;
+}
+
+.searchInput::placeholder {
+  color: #999999;
+}
+
+/* hide the browser's built-in clear button */
+.searchInput::-webkit-search-cancel-button {
+  display: none;
+}
+
+.escHint {
+  flex-shrink: 0;
+  padding: 2px 6px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  color: #666666;
+  font: inherit;
+  font-size: 11px;
+}
+
+.searchClose {
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #666666;
+  cursor: pointer;
 }
 
 /* Mobile menu button */
-
 .menuButton {
   display: none;
-
-  width: 40px;
-  height: 40px;
-
-  padding: 8px;
-
-  border: 1px solid #dddddd;
-  border-radius: 6px;
-
-  background: #ffffff;
-
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  border: 0;
+  background: none;
   cursor: pointer;
 }
 
 .menuButton span {
   display: block;
-
-  width: 20px;
+  width: 22px;
   height: 2px;
-
-  margin: 4px auto;
-
-  background: #333333;
+  margin: 5px auto;
+  background: #111111;
 }
 
 /* Tablet */
-
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .container {
-    padding: 0 20px;
+    padding: 0 24px;
+    column-gap: 16px;
   }
 
   .navList {
-    gap: 2px;
+    gap: 32px;
   }
 
-  .navItem :global(a) {
-    padding: 0 12px;
-    font-size: 13px;
+  .searchForm {
+    max-width: 240px;
   }
 
-  .sellLink {
-    margin-left: 12px;
+  .escHint {
+    display: none;
   }
 }
 
 /* Mobile */
-
 @media (max-width: 900px) {
   .navbar {
-    height: auto;
-    min-height: 56px;
+    height: 60px;
   }
 
   .container {
-    min-height: 56px;
+    grid-template-columns: minmax(0, 1fr) auto;
     padding: 0 16px;
   }
 
   .menuButton {
     display: block;
-    margin-left: auto;
+  }
+
+  .actions {
+    gap: 16px;
+  }
+
+  /*
+   * Search on mobile: the bar is an overlay that covers the whole navbar row,
+   * so nothing in the grid has to resize or wrap.
+   */
+  .searchForm {
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 12px;
+    right: 12px;
+    z-index: 20;
+    max-width: none;
+    height: auto;
+    transform-origin: center;
+  }
+
+  .escHint {
+    display: none;
+  }
+
+  .searchClose {
+    display: inline-flex;
   }
 
   .navigation {
     display: none;
 
     position: absolute;
-    top: 56px;
+    top: 100%;
     left: 0;
-
     width: 100%;
-    height: auto;
-
-    padding: 12px 16px 20px;
+    padding: 8px 16px 20px;
+    box-sizing: border-box;
 
     background: #ffffff;
-
-    border-bottom: 1px solid #e5e5e5;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-    z-index: 100;
+    border-bottom: 1px solid #ececec;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
   }
 
   .navigationOpen {
@@ -218,38 +387,40 @@
   }
 
   .navList {
-    width: 100%;
-    height: auto;
-
-    display: flex;
     flex-direction: column;
     align-items: stretch;
-
-    gap: 4px;
-
-    margin: 0;
+    gap: 0;
   }
 
   .navItem {
-    width: 100%;
-    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    border-bottom: 1px solid #f0f0f0;
   }
 
-  .navItem :global(a) {
+  .navItem > a,
+  .navItem > * > a,
+  .dropdownTrigger {
+    justify-content: space-between;
     width: 100%;
-    height: 42px;
-
-    justify-content: flex-start;
-
-    padding: 0 16px;
-
-    border-radius: 8px;
+    padding: 16px 0;
   }
 
-  .sellLink {
-    margin: 12px 0 0;
-    padding: 12px 16px;
+  /* Dropdowns expand inline instead of floating */
+  .dropdown {
+    position: static;
+    display: none;
+    min-width: 0;
+    padding: 0 0 8px 12px;
+    border: 0;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
 
-    border-top: 1px solid #eeeeee;
+  .dropdownOpen {
+    display: block;
+    transform: none;
   }
 }

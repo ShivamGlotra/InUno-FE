@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <>
       {' '}
-      {/* <Header /> */}
+      <Header text="Free shipping on orders over $50!" href="/shipping-info" />
       <Navbar />
       <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
         <body className="min-h-full flex flex-col">{children}</body>
