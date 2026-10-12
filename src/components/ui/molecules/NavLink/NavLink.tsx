@@ -7,10 +7,12 @@ export interface NavLinkProps {
   active?: boolean;
 }
 
-export default function NavLink({ href, children, active = false }: NavLinkProps) {
+const NavLink = ({ href, children, active = false }: NavLinkProps) => {
   return (
     <Link href={href} className={active ? styles.active : styles.link}>
       {children}
     </Link>
   );
-}
+};
+
+export default NavLink;

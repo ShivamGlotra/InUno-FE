@@ -22,8 +22,8 @@ export default function ImageComponent({
     <Image
       src={src}
       alt={alt}
-      width={width}
-      height={height}
+      width={width || 0}
+      height={height || 0}
       className={`${styles.image} ${styles[objectFit]} ${className}`}
     />
   );
