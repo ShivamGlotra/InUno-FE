@@ -23,7 +23,7 @@
   max-width: var(--container-max, 1680px);
   height: 100%;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 42px;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);

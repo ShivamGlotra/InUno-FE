@@ -3,7 +3,7 @@ import { Product } from '@/types/productType';
 export const ProductSampleData: Product[] = [
   {
     id: 'product-004',
-    image: 'https://placehold.co/300x300',
+    image: '/images/placeholder.png',
     category: 'Electronics',
     name: 'Bluetooth Speaker',
     rating: 4.6,
@@ -15,7 +15,7 @@ export const ProductSampleData: Product[] = [
     currency: 'USD',
     images: [
       {
-        url: 'https://placehold.co/600x600',
+        url: '/images/placeholder.png',
         alt: 'Bluetooth Speaker',
       },
     ],
@@ -27,7 +27,7 @@ export const ProductSampleData: Product[] = [
 
   {
     id: 'product-005',
-    image: 'https://placehold.co/300x300',
+    image: '/images/placeholder.png',
     discountPercent: 15,
     category: 'Computers',
     name: 'Mechanical Keyboard',
@@ -42,7 +42,7 @@ export const ProductSampleData: Product[] = [
     compareAtPrice: 99.99,
     images: [
       {
-        url: 'https://placehold.co/600x600',
+        url: '/images/placeholder.png',
         alt: 'Mechanical Keyboard',
       },
     ],
@@ -68,7 +68,7 @@ export const ProductSampleData: Product[] = [
 
   {
     id: 'product-006',
-    image: 'https://placehold.co/300x300',
+    image: '/images/placeholder.png',
     category: 'Home',
     name: 'Smart LED Lamp',
     rating: 4.3,
@@ -80,7 +80,7 @@ export const ProductSampleData: Product[] = [
     currency: 'USD',
     images: [
       {
-        url: 'https://placehold.co/600x600',
+        url: '/images/placeholder.png',
         alt: 'Smart LED Lamp',
       },
     ],
@@ -106,7 +106,7 @@ export const ProductSampleData: Product[] = [
 
   {
     id: 'product-007',
-    image: 'https://placehold.co/300x300',
+    image: '/images/placeholder.png',
     discountPercent: 25,
     category: 'Gaming',
     name: 'Gaming Headset',
@@ -121,7 +121,7 @@ export const ProductSampleData: Product[] = [
     compareAtPrice: 99.99,
     images: [
       {
-        url: 'https://placehold.co/600x600',
+        url: '/images/placeholder.png',
         alt: 'Gaming Headset',
       },
     ],
@@ -133,7 +133,7 @@ export const ProductSampleData: Product[] = [
 
   {
     id: 'product-008',
-    image: 'https://placehold.co/300x300',
+    image: '/images/placeholder.png',
     category: 'Accessories',
     name: 'Leather Wallet',
     rating: 4.5,
@@ -145,7 +145,7 @@ export const ProductSampleData: Product[] = [
     currency: 'USD',
     images: [
       {
-        url: 'https://placehold.co/600x600',
+        url: '/images/placeholder.png',
         alt: 'Leather Wallet',
       },
     ],
@@ -171,7 +171,7 @@ export const ProductSampleData: Product[] = [
 
   {
     id: 'product-009',
-    image: 'https://placehold.co/300x300',
+    image: '/images/placeholder.png',
     category: 'Fitness',
     name: 'Resistance Bands',
     rating: 4.6,
@@ -183,7 +183,7 @@ export const ProductSampleData: Product[] = [
     currency: 'USD',
     images: [
       {
-        url: 'https://placehold.co/600x600',
+        url: '/images/placeholder.png',
         alt: 'Resistance Bands',
       },
     ],
@@ -209,7 +209,7 @@ export const ProductSampleData: Product[] = [
 
   {
     id: 'product-010',
-    image: 'https://placehold.co/300x300',
+    image: '/images/placeholder.png',
     discountPercent: 12,
     category: 'Home',
     name: 'Coffee Maker',
@@ -224,7 +224,7 @@ export const ProductSampleData: Product[] = [
     compareAtPrice: 99.99,
     images: [
       {
-        url: 'https://placehold.co/600x600',
+        url: '/images/placeholder.png',
         alt: 'Coffee Maker',
       },
     ],
@@ -236,7 +236,7 @@ export const ProductSampleData: Product[] = [
 
   {
     id: 'product-011',
-    image: 'https://placehold.co/300x300',
+    image: '/images/placeholder.png',
     category: 'Clothing',
     name: 'Classic Hoodie',
     rating: 4.7,
@@ -248,7 +248,7 @@ export const ProductSampleData: Product[] = [
     currency: 'USD',
     images: [
       {
-        url: 'https://placehold.co/600x600',
+        url: '/images/placeholder.png',
         alt: 'Classic Hoodie',
       },
     ],
@@ -280,7 +280,7 @@ export const ProductSampleData: Product[] = [
 
   {
     id: 'product-012',
-    image: 'https://placehold.co/300x300',
+    image: '/images/placeholder.png',
     discountPercent: 20,
     category: 'Electronics',
     name: 'Wireless Charger',
@@ -295,7 +295,7 @@ export const ProductSampleData: Product[] = [
     compareAtPrice: 39.99,
     images: [
       {
-        url: 'https://placehold.co/600x600',
+        url: '/images/placeholder.png',
         alt: 'Wireless Charger',
       },
     ],
@@ -307,7 +307,7 @@ export const ProductSampleData: Product[] = [
 
   {
     id: 'product-013',
-    image: 'https://placehold.co/300x300',
+    image: '/images/placeholder.png',
     category: 'Outdoor',
     name: 'Travel Backpack',
     rating: 4.8,
@@ -319,7 +319,7 @@ export const ProductSampleData: Product[] = [
     currency: 'USD',
     images: [
       {
-        url: 'https://placehold.co/600x600',
+        url: '/images/placeholder.png',
         alt: 'Travel Backpack',
       },
     ],

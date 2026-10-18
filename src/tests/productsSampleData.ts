@@ -345,11 +345,12 @@ export const ProductSampleData: Product[] = [
 ];
 
 const sampleImages = [
-  'https://media.istockphoto.com/id/1220752009/photo/black-wireless-headphone-on-white-background-headphone-isolated-on-a-white-background-product.jpg?s=1024x1024&w=is&k=20&c=EgBJSRILgVFkoY8QRpJcpOJgnHHmrqG13XIHaGjvKp0=',
-  'https://media.istockphoto.com/id/1480789361/photo/light-purple-wireless-headphone-on-isolated-white-background-product-photography-fashion-item.jpg?s=1024x1024&w=is&k=20&c=53azT3bnpz1Kmi3MD_C5A0LoSu1M0Otjc7td8VqoDd8=',
-  'https://media.istockphoto.com/id/1373472480/photo/black-audio-headphones-isolated-on-white-background.jpg?s=1024x1024&w=is&k=20&c=Al8-PYX9skR0ODCiSr2d5F1hiA22OZac05-ony-MDlw=',
-  'https://media.istockphoto.com/id/1175203328/photo/3d-render-image-of-modern-coral-colored-audio-headphones-on-a-white.jpg?s=1024x1024&w=is&k=20&c=sUvz8TGyHdjCuMKcp91rAG4UzFyMv-zFTgHUtqOaqzA=',
-  'https://media.istockphoto.com/id/942462608/photo/headphone-black-color.jpg?s=1024x1024&w=is&k=20&c=sRlzBOm3JCbCkgg9yTVc_zMAApg4BV0WSXcdz-c_QIc=',
+  '/images/placeholder.png',
+  '/images/placeholder.png',
+  '/images/placeholder.png',
+  '/images/placeholder.png',
+  '/images/placeholder.png',
+  '/images/placeholder.png',
 ];
 
 export const getSampleImages = (count: number): string[] => {

@@ -13,7 +13,7 @@ type Story = StoryObj<typeof ImageComponent>;
 
 export const Default: Story = {
   args: {
-    src: 'https://placehold.co/400x300',
+    src: '/images/placeholder.png',
     alt: 'Placeholder image',
     width: 400,
     height: 300,
@@ -22,7 +22,7 @@ export const Default: Story = {
 
 export const Contain: Story = {
   args: {
-    src: 'https://placehold.co/400x300',
+    src: '/images/placeholder.png',
     alt: 'Placeholder image',
     width: 400,
     height: 300,
@@ -32,7 +32,7 @@ export const Contain: Story = {
 
 export const Cover: Story = {
   args: {
-    src: 'https://placehold.co/400x300',
+    src: '/images/placeholder.png',
     alt: 'Placeholder image',
     width: 400,
     height: 300,
