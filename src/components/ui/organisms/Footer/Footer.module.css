@@ -4,6 +4,7 @@
   padding: 56px 32px 28px;
   background: #0b1020;
   color: #cbd5e1;
+  font-family: var(--font-geist-sans, 'Geist Sans', sans-serif);
 }
 
 /* .inner {

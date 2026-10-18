@@ -3,9 +3,8 @@
   align-items: center;
   gap: 16px;
   padding: 12px 20px;
-  background: #f4f5f7;
+  background: #ffffff;
   border-radius: 0.5rem;
-  border: 1.5px solid transparent;
   box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.06),
     0 1px 2px rgba(0, 0, 0, 0.04);

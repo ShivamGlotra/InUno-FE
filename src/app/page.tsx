@@ -9,7 +9,6 @@ import {
   recommendedProducts,
 } from '@/data/homePage-data';
 import ClearBackgroundContainerProps from '@/containers/CategoryContainer/NoBackgroundContainer/Container';
-import WhiteBackgroundContainer from '@/containers/CategoryContainer/WhiteBGContainer/Container';
 import LandingHeroBannerContainer from '@/containers/LandingHeroBannerContainer/LandingHeroBannerContainer';
 
 const Home = () => {
@@ -35,6 +34,7 @@ const Home = () => {
           badge: 'Deal',
           color: '#FF5733',
         }))}
+        title="Today's Deals"
       />
       {/* <ClearBackgroundContainerProps
         categories={categoryData.map((category) => ({
@@ -62,6 +62,7 @@ const Home = () => {
           badge: 'Recommended',
           color: '#33FF57',
         }))}
+        title="Products on Sale"
       />
     </main>
   );
